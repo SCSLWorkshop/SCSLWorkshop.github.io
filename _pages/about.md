@@ -2,7 +2,7 @@
 layout: workshop
 title: About
 permalink: /
-subtitle: Workshop at the Conference on Neural Information Processing Systems (NeurIPS) 2024
+subtitle: Workshop at The International Conference on Learning Representations (ICLR) 2025
 
 profile:
   align: right

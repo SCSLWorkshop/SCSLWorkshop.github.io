@@ -2,15 +2,15 @@
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>http://localhost:4000/news/panel/</loc>
-<lastmod>2023-10-01T00:00:00+02:00</lastmod>
+<lastmod>2023-10-01T00:00:00+03:30</lastmod>
 </url>
 <url>
 <loc>http://localhost:4000/news/submissions/</loc>
-<lastmod>2023-11-01T00:00:00+01:00</lastmod>
+<lastmod>2023-11-01T00:00:00+03:30</lastmod>
 </url>
 <url>
 <loc>http://localhost:4000/2022/04/23/displaying-external-posts-on-your-al-folio-blog.html</loc>
-<lastmod>2022-04-24T01:20:09+02:00</lastmod>
+<lastmod>2022-04-24T02:50:09+03:30</lastmod>
 </url>
 <url>
 <loc>http://localhost:4000/</loc>
@@ -20,6 +20,9 @@
 </url>
 <url>
 <loc>http://localhost:4000/_pages/dropdown.html</loc>
+</url>
+<url>
+<loc>http://localhost:4000/proposal/</loc>
 </url>
 <url>
 <loc>http://localhost:4000/schedule/</loc>
