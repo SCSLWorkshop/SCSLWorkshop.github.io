@@ -7,40 +7,33 @@ nav: true
 nav_order: 3
 ---
 
-Over the last decade, deep learning has brought about astonishing improvements in computer vision, signal processing, language modeling and beyond.
-The complexity of real high-dimensional data and deep network architectures used in practice stands as a challenge to traditional mathematical analysis, which is limited to simplified, tractable models that can be analyzed rigorously from the bottom up.
-Hence, many aspects remain mysterious and our understanding of the success and failure modes of deep learning remains very limited.
-
-This workshop aims to promote a complementary approach to further our understanding of deep learning, through the lens of the scientific method. This approach uses carefully designed experiments in order to answer precise questions about how and why deep learning works.
-<!-- For instance, it can be used to validate or falsify hypotheses, challenge common assumptions, evidence surprising phenomena, or reveal empirical regularities. -->
-Such results can then be used to ground theoretical models in empirical observations or formulate conjectures, but also can inform engineering decisions and spur new research directions.
+Reliance on spurious correlations due to simplicity bias is a well-known pitfall of deep learning models. This issue stems from the statistical nature of deep learning algorithms and their inductive biases at all stages, including data preprocessing, architectures, and optimization. Therefore, spurious correlations and shortcut learning are fundamental and common practical problems across all branches of AI. The foundational nature and widespread occurrence of reliance on spurious correlations and shortcut learning make it an important research topic and a gateway to understanding how deep models learn patterns and the underlying mechanisms responsible for their effectiveness and generalization. This workshop aims to address two aspects of this phenomenon: its foundations and potential solutions.
 
 ## Topics
+The topics of interest for the workshop include, but are not limited to, the following:
 
-We invite researchers from machine learning and related fields to submit their latest work on the science of deep learning to the workshop. Accepted papers will be presented as posters during the poster sessions. Selected works will also be highlighted as contributed talks.
+* Introducing new spurious correlation benchmarks for various fields and modalities, including multimodal data (image, text, audio, video, graph, time series, etc.)  
+  * Examining foundational large language models (LLMs) and large multimodal models (LMMs) in terms of robustness to spurious correlations  
+  * Creating new datasets to evaluate the robustness of multi-modal models  
+  * Developing new benchmarks focusing on different types of features as shortcuts  
+  * Constructing new robustness benchmarks for various applications (medical, social, industrial, etc.)  
+  * Designing new reinforcement learning environments to study spurious correlations  
+  * Presenting new real-world scenarios and benchmarks that challenge reliance on spurious correlations and shortcut learning  
+* Proposing new robustification methods  
+  * Finding solutions for the efficient robustification of LLMs and LMMs  
+  * Introducing new robustification methods for various paradigms, such as reinforcement learning, contrastive learning, and self-supervised learning  
+  * Proposing new algorithms for causal representation learning  
+  * Investigating novel solutions for robustness to spurious correlations in less-explored areas, such as optimization algorithms and data gathering and preprocessing schemes  
+* Exploring the foundations of spurious correlations and shortcut learning  
+  * Presenting mathematical formulations that describe the issue and its origins  
+  * Studying the role of widely used gradient-descent-based optimization methods in reliance on shortcuts and improvement solutions  
+  * Exploring the effect of shortcuts and spurious features on the loss landscape
 
-We encourage submissions that further our understanding of deep learning using the scientific method. Works that are a good fit for the workshop use empirical experiments on real-world datasets in order to:
-* validate or falsify hypotheses about the inner workings of deep networks,
-* make observations to inform or inspire theoretical models,
-* evidence new phenomena or empirical regularities (e.g., scaling laws).
-
-We invite studies that employ the scientific method of investigation in any field of application, including but not limited to:
-* in-context learning in transformers,
-* generalization properties of generative models,
-* inductive biases of learning algorithms,
-* (mechanistic) interpretability,
-* empirical studies of loss landscapes, training dynamics, and learned weights and representations.
-
-We explicitly welcome submissions that fall outside standard acceptance criteria, such as improving state-of-the-art performance or proving rigorous theorems, yet have a high impact potential by shedding light on deep network mechanisms.
-
-## Challenge
-
-Authors can opt-in to be included to our **Debunking Challenge**, a competition aiming to interrogate commonly-held beliefs in the deep learning community. **Authors may add an additional page to their submission to submit to the challenge**. Prizes will be awarded to the top submission. For full details and submission criteria please visit [our Challenge page](/challenge/).
 
 ## Important Dates
 
-*   Submission Deadline: Sep 17 '24 (Anywhere on Earth)
-*   Acceptance Notification: Oct 9 '24 (Anywhere on Earth)
+*   Submission Deadline: February XX '25 (Anywhere on Earth)
+*   Acceptance Notification: March XX '25 (Anywhere on Earth)
 <!-- *   Camera-Ready Deadline for Accepted Submissions: `TBD` -->
 
 ## Submission Details
