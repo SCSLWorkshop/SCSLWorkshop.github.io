@@ -94,48 +94,85 @@
           </header>
 
           <article>
-            <p>Over the last decade, deep learning has brought about astonishing improvements in computer vision, signal processing, language modeling and beyond.
-The complexity of real high-dimensional data and deep network architectures used in practice stands as a challenge to traditional mathematical analysis, which is limited to simplified, tractable models that can be analyzed rigorously from the bottom up.
-Hence, many aspects remain mysterious and our understanding of the success and failure modes of deep learning remains very limited.</p>
+            <p>Reliance on spurious correlations due to simplicity bias is a well-known pitfall of deep learning models. This issue stems from the statistical nature of deep learning algorithms and their inductive biases at all stages, including data preprocessing, architectures, and optimization. Therefore, spurious correlations and shortcut learning are fundamental and common practical problems across all branches of AI.</p>
 
-<p>This workshop aims to promote a complementary approach to further our understanding of deep learning, through the lens of the scientific method. This approach uses carefully designed experiments in order to answer precise questions about how and why deep learning works.
-<!-- For instance, it can be used to validate or falsify hypotheses, challenge common assumptions, evidence surprising phenomena, or reveal empirical regularities. -->
-Such results can then be used to ground theoretical models in empirical observations or formulate conjectures, but also can inform engineering decisions and spur new research directions.</p>
+<p>The foundational nature and widespread occurrence of reliance on spurious correlations and shortcut learning make it an important research topic and a gateway to understanding how deep models learn patterns and the underlying mechanisms responsible for their effectiveness and generalization. However, there is a notable lack of rigorous evaluation benchmarks for assessing robustness to spurious correlations. Current benchmarks based on group labels offer limited guarantees of robustness, addressing only a few known spurious correlations. Additionally, human annotation of groups is not a scalable solution and may overlook spurious correlations that do not align with human perceptions. This limitation hampers their effectiveness in scenarios where the nature of the spurious correlation is unknown or where group labels for specific attributes are unavailable. Developing comprehensive benchmarks and also automated methods for detecting spurious correlations could significantly advance progress in this field.</p>
+
+<p>Moreover, many facets of developing robust models to combat spurious correlations remain inadequately explored. The investigation of spurious correlations in learning paradigms beyond supervised learning has been particularly limited. Additionally, as foundation models continue to gain prominence, it becomes increasingly vital to leverage these models not only as tools for tackling spurious correlation challenges but also as subjects of study to better understand the spurious correlations they may manifest.</p>
+
+<p>This workshop aims to address these underexplored yet critical areas related to creating robust models that effectively tackle spurious correlations in real-world applications.</p>
 
 <h2 id="topics">Topics</h2>
+<p>The topics of interest for the workshop include, but are not limited to, the following:</p>
 
-<p>We invite researchers from machine learning and related fields to submit their latest work on the science of deep learning to the workshop. Accepted papers will be presented as posters during the poster sessions. Selected works will also be highlighted as contributed talks.</p>
-
-<p>We encourage submissions that further our understanding of deep learning using the scientific method. Works that are a good fit for the workshop use empirical experiments on real-world datasets in order to:</p>
 <ul>
-  <li>validate or falsify hypotheses about the inner workings of deep networks,</li>
-  <li>make observations to inform or inspire theoretical models,</li>
-  <li>evidence new phenomena or empirical regularities (e.g., scaling laws).</li>
+  <li>Introducing new spurious correlation benchmarks for various fields and modalities, including multimodal data (image, text, audio, video, graph, time series, etc.)
+    <ul>
+      <li>Examining foundational large language models (LLMs) and large multimodal models (LMMs) in terms of robustness to spurious correlations</li>
+      <li>Creating new datasets to evaluate the robustness of multi-modal models</li>
+      <li>Developing new benchmarks focusing on different types of features as shortcuts</li>
+      <li>Constructing new robustness benchmarks for various applications (medical, social, industrial, etc.)</li>
+      <li>Designing new reinforcement learning environments to study spurious correlations</li>
+      <li>Presenting new real-world scenarios and benchmarks that challenge reliance on spurious correlations and shortcut learning</li>
+    </ul>
+  </li>
+  <li>Proposing new robustification methods
+    <ul>
+      <li>Finding solutions for the efficient robustification of LLMs and LMMs</li>
+      <li>Introducing new robustification methods for various paradigms, such as reinforcement learning, contrastive learning, and self-supervised learning</li>
+      <li>Proposing new algorithms for causal representation learning</li>
+      <li>Investigating novel solutions for robustness to spurious correlations in less-explored areas, such as optimization algorithms and data gathering and preprocessing schemes</li>
+    </ul>
+  </li>
+  <li>Exploring the foundations of spurious correlations and shortcut learning
+    <ul>
+      <li>Presenting mathematical formulations that describe the issue and its origins</li>
+      <li>Studying the role of widely used gradient-descent-based optimization methods in reliance on shortcuts and improvement solutions</li>
+      <li>Exploring the effect of shortcuts and spurious features on the loss landscape</li>
+    </ul>
+  </li>
 </ul>
-
-<p>We invite studies that employ the scientific method of investigation in any field of application, including but not limited to:</p>
-<ul>
-  <li>in-context learning in transformers,</li>
-  <li>generalization properties of generative models,</li>
-  <li>inductive biases of learning algorithms,</li>
-  <li>(mechanistic) interpretability,</li>
-  <li>empirical studies of loss landscapes, training dynamics, and learned weights and representations.</li>
-</ul>
-
-<p>We explicitly welcome submissions that fall outside standard acceptance criteria, such as improving state-of-the-art performance or proving rigorous theorems, yet have a high impact potential by shedding light on deep network mechanisms.</p>
-
-<h2 id="challenge">Challenge</h2>
-
-<p>Authors can opt-in to be included to our <strong>Debunking Challenge</strong>, a competition aiming to interrogate commonly-held beliefs in the deep learning community. <strong>Authors may add an additional page to their submission to submit to the challenge</strong>. Prizes will be awarded to the top submission. For full details and submission criteria please visit <a href="/challenge/">our Challenge page</a>.</p>
 
 <h2 id="important-dates">Important Dates</h2>
 
 <ul>
-  <li>Submission Deadline: Sep 17 ‘24 (Anywhere on Earth)</li>
-  <li>Acceptance Notification: Oct 9 ‘24 (Anywhere on Earth)
+  <li>Submission Deadline: February XX ‘25 (Anywhere on Earth)</li>
+  <li>Acceptance Notification: March XX ‘25 (Anywhere on Earth)
 <!-- *   Camera-Ready Deadline for Accepted Submissions: `TBD` -->
 </li>
 </ul>
+
+<h1 id="reviewing-process">Reviewing Process</h1>
+
+<ol>
+  <li>
+<strong>Peer-Review Process:</strong> All submissions to the workshop undergo a double-blind peer-review process, ensuring impartiality and anonymity for both authors and reviewers. TODO: Are submissions uploaded on OpenReview? Do we have a public discussion? Senior reviewers?</li>
+  <li>
+<strong>Selection Criteria:</strong> Submissions will be evaluated on the following criteria:
+    <ul>
+      <li>Novelty</li>
+      <li>Technical Quality</li>
+      <li>Relevance to the Workshop Theme</li>
+      <li>Clarity and Presentation</li>
+    </ul>
+  </li>
+  <li>
+<strong>Reviewer Guidelines:</strong> We will essentially follow the same guidelines for our reviewers as those used by the main conference, as outlined <a href="https://iclr.cc/Conferences/2025/ReviewerGuide" target="_blank" rel="noopener noreferrer">here</a>.</li>
+  <li>
+<strong>Reviewers:</strong> We will issue a call to recruit reviewers who are experts in the relevant fields and the specific focus area of the workshop. Here [TODO: Google form] is a draft of our call-for-reviewers form. We plan to leverage social media, along with our personal networks, to publicly promote the form. In case of emergency, if we cannot recruit enough reviewers through this process, we have already spoken to several graduate students from the University of Maryland and Sharif University, as well as some senior researchers in the field. Including these contacts and the core organizing team, we already have over 20 reviewers available to assist.</li>
+  <li>
+<strong>Review outcomes:</strong> We will have meta-reviewers, who are more senior researchers, responsible for summarizing the reviews and making final decisions. Submissions will be categorized as:
+    <ul>
+      <li>Accepted</li>
+      <li>Minor Revisions Required [TODO: Do we want this?]</li>
+      <li>Rejected</li>
+    </ul>
+  </li>
+  <li>
+<strong>Revisions?</strong> TODO: Do we want this?</li>
+  <li>
+<strong>Post-Review:</strong> Accepted papers will be presented during the workshop either as oral presentations or poster sessions, depending on [TODO: Our criteria for oral].</li>
+</ol>
 
 <h2 id="submission-details">Submission Details</h2>
 
@@ -155,7 +192,7 @@ Such results can then be used to ground theoretical models in empirical observat
 
 <h2 id="questions">Questions</h2>
 
-<p>If you have any questions, please do not hesitate to contact us at <a href="mailto:scienceofdl.workshop.2024@gmail.com">scienceofdl.workshop.2024@gmail.com</a>.</p>
+<p>If you have any questions, please do not hesitate to contact us at <a href="mailto:scslworkshop@gmail.com">scslworkshop@gmail.com</a>.</p>
 
           </article>
 
@@ -165,7 +202,7 @@ Such results can then be used to ground theoretical models in empirical observat
 
     <!-- Footer -->    <footer class="sticky-bottom mt-5">
       <div class="container">
-        © Copyright 2024 Workshop on  Spurious Correlation and Shortcut Learning. Last updated: October 12, 2024.
+        © Copyright 2024 Workshop on  Spurious Correlation and Shortcut Learning. Last updated: October 16, 2024.
       </div>
     </footer>
 
