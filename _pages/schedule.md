@@ -11,23 +11,23 @@ nav_order: 2
 Submit questions for our panelists <a href="https://forms.gle/XXXX">here</a>.
 
 
-| **Time (PST)** | **Event** |
-| :------:   | :------- |
-| 8:50 - 9:00 | **Introduction and opening remarks** |
-| 9:00 - 9:30 | **Keynote Talk** |
-| 9:30 - 10:00 | **Keynote Talk**|
-| 10:00 - 10:30 | **Keynote Talk**|
-| 10:30 - 11:00 | **Coffee Break** |
-| 11:00 - 11:30 | **Contributed Talks** |
-| 11:30 - 12:30 | **Poster Session 1** |
-| 12:30 - 13:30 | **Lunch Break** |
-| 13:30 - 14:00 | **Contributed Talks** |
-| 14:00 - 14:30 | **Keynote Talk**|
-| 14:30 - 15:00 | **Keynote Talk**|
-| 15:00 - 15:30 | **Coffee Break** |
-| 15:30 - 16:30 | **Panel Discussion**: |
-| 16:30 - 17:00 | **Closing Remarks** |
-| 17:00 - 18:00 | **Poster Session 2** |
+| Start Time | Plan | Details |
+| :---- | :---- | :---- |
+| 9:00 | Openning |  |
+| 9:10 | Invited Talk 1 | 35 \+ 15 minutes for Q\&A and discussion |
+| 10:00 | Invited Talk 2 | 35 \+ 15 minutes for Q\&A and discussion |
+| 10:50 | Break, Informal Discussion, and Networking | 20 minutes break |
+| 11:10 | Invited Talk  3 | 35 \+ 15 minutes for Q\&A and discussion |
+| 12:00 | Poster Session 1 |  |
+| 12:30 | Launch Break |  |
+| 13:30 | Invited Talk 4 | 35 \+ 15 minutes for Q\&A and discussion |
+| 14:20 | Invited Talk 5 | 35 \+ 15 minutes for Q\&A and discussion |
+| 15:10 | Break, Informal Discussion and Networking |  |
+| 15:30 | Oral Presentation 1 | 10 \+ 10 minutes for Q\&A and discussion |
+| 15:50 | Oral Presentation 2 | 10 \+ 10 minutes for Q\&A and discussion |
+| 16:10 | Oral Presentation 3 | 10 \+ 10 minutes for Q\&A and discussion |
+| 16:30 | Panel Discussion |  |
+| 17:30 | Poster Session 2 |  |
 {: .table}
 {: .table-striped}
 
