@@ -46,8 +46,8 @@ Overall, the topics of interest for the workshop include, but are not limited to
 
 ## Important Dates
 
-*   Submission Deadline: Early February '25 (Anywhere on Earth)
-*   Acceptance Notification: Early March '25 (Anywhere on Earth)
+*   Submission Deadline: Early February '25 (TBA)
+*   Acceptance Notification: Early March '25 (TBA)
 
 ## Submission Details
 
