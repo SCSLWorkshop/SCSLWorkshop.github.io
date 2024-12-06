@@ -6,9 +6,9 @@ description:
 nav: true
 nav_order: 2
 ---
-**April XXth, 2025**
+**April 27 or 28th, 2025**
 
-Submit questions for our panelists <a href="https://forms.gle/XXXX">here</a>.
+<!-- Submit questions for our panelists <a href="https://forms.gle/XXXX">here</a>. -->
 
 
 | Start Time | Plan | Details |

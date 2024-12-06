@@ -72,9 +72,6 @@
               <li class="nav-item active">
                 <a class="nav-link" href="/submissions/">Call for Papers<span class="sr-only">(current)</span></a>
               </li>
-              <li class="nav-item ">
-                <a class="nav-link" href="/proposal/">Workshop description</a>
-              </li>
             </ul>
           </div>
         </div>
@@ -94,25 +91,31 @@
           </header>
 
           <article>
-            <p>Reliance on spurious correlations due to simplicity bias is a well-known pitfall of deep learning models. This issue stems from the statistical nature of deep learning algorithms and their inductive biases at all stages, including data preprocessing, architectures, and optimization. Therefore, spurious correlations and shortcut learning are fundamental and common practical problems across all branches of AI.</p>
+            <h2 id="overview">Overview</h2>
 
-<p>The foundational nature and widespread occurrence of reliance on spurious correlations and shortcut learning make it an important research topic and a gateway to understanding how deep models learn patterns and the underlying mechanisms responsible for their effectiveness and generalization. However, there is a notable lack of rigorous evaluation benchmarks for assessing robustness to spurious correlations. Current benchmarks based on group labels offer limited guarantees of robustness, addressing only a few known spurious correlations. Additionally, human annotation of groups is not a scalable solution and may overlook spurious correlations that do not align with human perceptions. This limitation hampers their effectiveness in scenarios where the nature of the spurious correlation is unknown or where group labels for specific attributes are unavailable. Developing comprehensive benchmarks and also automated methods for detecting spurious correlations could significantly advance progress in this field.</p>
+<p>Despite the remarkable advancements towards generalizability and autonomy in AI systems, persistent challenges such as spurious correlations and shortcut learning continue to hinder the robustness, reliability, and ethical deployment of machine learning systems. These challenges arise from the statistical nature of machine learning algorithms and their implicit or inductive biases at all stages, including data preprocessing, architectures, and optimization. As a result, models rely on spurious patterns rather than understanding underlying causal relationships, making them vulnerable to failure in real-world scenarios where data distributions involve under-represented groups or minority populations. The foundational nature and widespread occurrence of reliance on spurious correlations and shortcut learning make it an important research topic and a gateway to understanding how deep models learn patterns and the underlying mechanisms responsible for their effectiveness and generalization.</p>
 
-<p>Moreover, many facets of developing robust models to combat spurious correlations remain inadequately explored. The investigation of spurious correlations in learning paradigms beyond supervised learning has been particularly limited. Additionally, as foundation models continue to gain prominence, it becomes increasingly vital to leverage these models not only as tools for tackling spurious correlation challenges but also as subjects of study to better understand the spurious correlations they may manifest.</p>
+<p>This workshop aims to foster a collaborative community to address these critical issues by bringing together experts from diverse fields and pushing the boundaries of current research. We will focus on promoting three key avenues: (i) the development of comprehensive evaluation benchmarks and the exploration of under-examined facets of the problem, (ii) the creation of novel solutions for building robust models that effectively tackle spurious correlations in real-world applications, and (iii) shedding light on lesser-explored aspects to deepen our understanding of the nature of these phenomena.</p>
 
-<p>This workshop aims to address these underexplored yet critical areas related to creating robust models that effectively tackle spurious correlations in real-world applications.</p>
+<h2 id="objectives">Objectives</h2>
+
+<p>Current benchmarks based on group labels offer limited guarantees of robustness, addressing only a few known spurious correlations. Additionally, human annotation of groups is not a scalable solution and may overlook spurious correlations that do not align with human perceptions. Current evaluations do not inform us about the scenarios when the spurious correlation is unknown or annotations are missing. Thus, there is a notable lack of rigorous evaluation benchmarks for assessing robustness to spurious correlations.  Developing comprehensive benchmarks and also automated methods for detecting spurious correlations could significantly advance progress in this field.</p>
+
+<p>Moreover, many facets of developing robust models to combat spurious correlations remain inadequately explored. The investigation of spurious correlations in learning paradigms beyond supervised learning has been particularly limited. As foundation models continue to gain prominence, it becomes necessary to leverage these models not only as tools for tackling spurious correlation challenges but also as subjects of study to better understand the spurious correlations they may manifest.</p>
+
+<p>While the impacts of and solutions for robustness to spurious correlation and shortcut learning have been targeted more frequently, attention has recently shifted to their foundations. Recent works focus on the origins of reliance on spurious correlation and shortcut learning in DNNs. Factors such as the tendency to maximize margins, biases introduced during training with SGD, and the time difference in learning core versus spurious patterns are examples of a fundamental understanding of this phenomenon in deep learning. However, lots of open questions regarding the mechanism behind learning biases in various paradigms of AI and in different architectures and algorithms remain open.</p>
 
 <h2 id="topics">Topics</h2>
-<p>The topics of interest for the workshop include, but are not limited to, the following:</p>
+<p>Overall, the topics of interest for the workshop include, but are not limited to, the following:</p>
 
 <ul>
   <li>Introducing new spurious correlation benchmarks for various fields and modalities, including multimodal data (image, text, audio, video, graph, time series, etc.)
     <ul>
       <li>Examining foundational large language models (LLMs) and large multimodal models (LMMs) in terms of robustness to spurious correlations</li>
       <li>Creating new datasets to evaluate the robustness of multi-modal models</li>
-      <li>Developing new benchmarks focusing on different types of features as shortcuts</li>
-      <li>Constructing new robustness benchmarks for various applications (medical, social, industrial, etc.)</li>
-      <li>Designing new reinforcement learning environments to study spurious correlations</li>
+      <li>Developing new benchmarks focusing on different types of features (depending on their modality) as shortcuts</li>
+      <li>Constructing new robustness benchmarks for various applications (medical, social, industrial, geographical, etc.)</li>
+      <li>Designing new tasks and environments to study spurious correlations in reinforcement learning</li>
       <li>Presenting new real-world scenarios and benchmarks that challenge reliance on spurious correlations and shortcut learning</li>
     </ul>
   </li>
@@ -122,6 +125,8 @@
       <li>Introducing new robustification methods for various paradigms, such as reinforcement learning, contrastive learning, and self-supervised learning</li>
       <li>Proposing new algorithms for causal representation learning</li>
       <li>Investigating novel solutions for robustness to spurious correlations in less-explored areas, such as optimization algorithms and data gathering and preprocessing schemes</li>
+      <li>Finding solutions for robustness to spurious correlation when information regarding spurious feature is completely or partially unknown</li>
+      <li>Introducing methods for robustness to spurious correlations in specific applications (medical, social, industrial, geographical, etc.)</li>
     </ul>
   </li>
   <li>Exploring the foundations of spurious correlations and shortcut learning
@@ -136,43 +141,9 @@
 <h2 id="important-dates">Important Dates</h2>
 
 <ul>
-  <li>Submission Deadline: February XX ‘25 (Anywhere on Earth)</li>
-  <li>Acceptance Notification: March XX ‘25 (Anywhere on Earth)
-<!-- *   Camera-Ready Deadline for Accepted Submissions: `TBD` -->
-</li>
+  <li>Submission Deadline: Early February ‘25 (Anywhere on Earth)</li>
+  <li>Acceptance Notification: Early March ‘25 (Anywhere on Earth)</li>
 </ul>
-
-<h1 id="reviewing-process">Reviewing Process</h1>
-
-<ol>
-  <li>
-<strong>Peer-Review Process:</strong> All submissions to the workshop undergo a double-blind peer-review process, ensuring impartiality and anonymity for both authors and reviewers. TODO: Are submissions uploaded on OpenReview? Do we have a public discussion? Senior reviewers?</li>
-  <li>
-<strong>Selection Criteria:</strong> Submissions will be evaluated on the following criteria:
-    <ul>
-      <li>Novelty</li>
-      <li>Technical Quality</li>
-      <li>Relevance to the Workshop Theme</li>
-      <li>Clarity and Presentation</li>
-    </ul>
-  </li>
-  <li>
-<strong>Reviewer Guidelines:</strong> We will essentially follow the same guidelines for our reviewers as those used by the main conference, as outlined <a href="https://iclr.cc/Conferences/2025/ReviewerGuide" target="_blank" rel="noopener noreferrer">here</a>.</li>
-  <li>
-<strong>Reviewers:</strong> We will issue a call to recruit reviewers who are experts in the relevant fields and the specific focus area of the workshop. Here [TODO: Google form] is a draft of our call-for-reviewers form. We plan to leverage social media, along with our personal networks, to publicly promote the form. In case of emergency, if we cannot recruit enough reviewers through this process, we have already spoken to several graduate students from the University of Maryland and Sharif University, as well as some senior researchers in the field. Including these contacts and the core organizing team, we already have over 20 reviewers available to assist.</li>
-  <li>
-<strong>Review outcomes:</strong> We will have meta-reviewers, who are more senior researchers, responsible for summarizing the reviews and making final decisions. Submissions will be categorized as:
-    <ul>
-      <li>Accepted</li>
-      <li>Minor Revisions Required [TODO: Do we want this?]</li>
-      <li>Rejected</li>
-    </ul>
-  </li>
-  <li>
-<strong>Revisions?</strong> TODO: Do we want this?</li>
-  <li>
-<strong>Post-Review:</strong> Accepted papers will be presented during the workshop either as oral presentations or poster sessions, depending on [TODO: Our criteria for oral].</li>
-</ol>
 
 <h2 id="submission-details">Submission Details</h2>
 
@@ -180,14 +151,11 @@
 
 <ul>
   <li>
-<strong>Formatting Instructions</strong>: Submissions are limited to 4 pages, with unlimited additional pages for references and appendices. <strong>Please use <a href="/assets/files/styles.zip">this LaTeX style files template</a></strong>.</li>
+<strong>Formatting Instructions</strong>: All submissions must use the <a href="https://github.com/ICLR/Master-Template/raw/master/iclr2025.zip" target="_blank" rel="noopener noreferrer">ICLR template</a>. We do not require the authors to include the checklist in the template.</li>
   <li>
-<strong>Reviews</strong>: The review process will be double-blind. <strong>All submissions must be anonymized</strong>. Submissions that breach anonymity will be desk-rejected.</li>
+<strong>Reviews</strong>: All submissions to the workshop undergo a double-blind peer-review process, ensuring impartiality and anonymity for both authors and reviewers. <strong>All submissions must be anonymized</strong>. Submissions that breach anonymity will be desk-rejected.</li>
   <li>
-<strong>Dual Submission Policy</strong>: If the submission was accepted at prior conferences, journal, or workshops (including Neurips 2024), it should be extended and include new results to be considered for acceptance. Papers that are currently under review are welcome to be submitted.</li>
-  <li>There will be no proceedings for the venue. We will post the list of accepted papers on the workshop website. In addition, accepted submissions will be made public on OpenReview.</li>
-  <li>Submissions will be reviewed on OpenReview: <a href="https://openreview.net/group?id=NeurIPS.cc/2024/Workshop/SciForDL" target="_blank" rel="noopener noreferrer">submission page</a>.</li>
-  <li>To apply for financial assistance fill out this <a href="https://forms.gle/mANcM9ZkS7q7BCof7" target="_blank" rel="noopener noreferrer">form</a>.</li>
+<strong>Dual Submission Policy</strong>: If the submission was accepted at prior conferences, journal, or workshops, it should be extended and include new results to be considered for acceptance. Papers that are currently under review are welcome to be submitted.</li>
 </ul>
 
 <h2 id="questions">Questions</h2>
@@ -202,7 +170,7 @@
 
     <!-- Footer -->    <footer class="sticky-bottom mt-5">
       <div class="container">
-        © Copyright 2024 Workshop on  Spurious Correlation and Shortcut Learning. Last updated: October 18, 2024.
+        © Copyright 2024 Workshop on  Spurious Correlation and Shortcut Learning. Last updated: December 06, 2024.
       </div>
     </footer>
 
