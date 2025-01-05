@@ -46,7 +46,7 @@ Overall, the topics of interest for the workshop include, but are not limited to
 
 ## Important Dates
 
-*   Submission Deadline: Early February '25 (TBA)
+*   Submission Deadline: 03 February '25 (AoE)
 *   Acceptance Notification: Early March '25 (TBA)
 
 ## Submission Details
@@ -54,7 +54,7 @@ Overall, the topics of interest for the workshop include, but are not limited to
 To ensure your submission is considered, please adhere to the following guidelines:
 
 * **Formatting Instructions**: All submissions must use the [ICLR template](https://github.com/ICLR/Master-Template/raw/master/iclr2025.zip). We do not require the authors to include the checklist in the template. 
-* **Reviews**: All submissions to the workshop undergo a double-blind peer-review process, ensuring impartiality and anonymity for both authors and reviewers. **All submissions must be anonymized**. Submissions that breach anonymity will be desk-rejected.
+* **Reviews**: All submissions to the workshop undergo a double-blind review process, ensuring impartiality and anonymity for both authors and reviewers. **All submissions must be anonymized**. Submissions that breach anonymity will be desk-rejected.
 * **Dual Submission Policy**: If the submission was accepted at prior conferences, journal, or workshops, it should be extended and include new results to be considered for acceptance. Papers that are currently under review are welcome to be submitted.
 
 ## Questions
