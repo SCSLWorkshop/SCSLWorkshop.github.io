@@ -46,16 +46,29 @@ Overall, the topics of interest for the workshop include, but are not limited to
 
 ## Important Dates
 
-*   Submission Deadline: 03 February '25 (AoE)
-*   Acceptance Notification: Early March '25 (TBA)
+*   **Submission Deadline**: 3rd February 2025, 11:59 PM (AoE)
+*   **Acceptance Notification**: Early March 2025 (TBA)
+
+## Tiny Papers Track
+* **Goals**: The goal of the Tiny Papers Track is to build on top of previous ICLR Tiny Papers track efforts to encourage submissions from under-represented, under-resourced, and budding researchers who may not (yet) have the resources to submit full papers. SCSL workshop aims to leverage the Tiny Papers track to broaden participation across the diversity of research topics at the intersection of shortcut learning and spurious correlation. We welcome submissions that provide new ideas or fresh perspectives in a digestible format.
+
+* **Instructions**: We encourage submissions up to **2 pages** in length for tiny papers using the ICLR 2025 template (no abstract is required). Reviewers will be asked to evaluate the clarity, correctness and reproducibility of the submission. Submissions from under-represented groups are especially encouraged.
 
 ## Submission Details
 
 To ensure your submission is considered, please adhere to the following guidelines:
 
 * **Formatting Instructions**: All submissions must use the [ICLR template](https://github.com/ICLR/Master-Template/raw/master/iclr2025.zip). We do not require the authors to include the checklist in the template. 
-* **Reviews**: All submissions to the workshop undergo a double-blind review process, ensuring impartiality and anonymity for both authors and reviewers. **All submissions must be anonymized**. Submissions that breach anonymity will be desk-rejected.
+* **Reviews**: All submissions to the workshop undergo a double-blind review process, ensuring impartiality and anonymity for both authors and reviewers. **All submissions must be anonymized**. In particular, you should not include author names, author affiliations, or acknowledgements in your submission and you should avoid providing any other identifying information (even in the supplementary material). Submissions that breach anonymity will be desk-rejected.
 * **Dual Submission Policy**: If the submission was accepted at prior conferences, journal, or workshops, it should be extended and include new results to be considered for acceptance. Papers that are currently under review are welcome to be submitted.
+* **Non-Archival**: The workshop is a non-archival venue and will not have official proceedings. Workshop submissions can be subsequently or concurrently submitted to other venues. Accepted papers will be publicly available on OpenReview and workshop's website.
+
+## FAQs
+* What is non-archival?
+  * The SCSL workshop itself does not publish formal proceedings containing all accepted submissions. This way, authors retain the freedom to submit their work elsewhere for archival publication without facing exclusivity restrictions. Authors of all accepted submissions can choose to share their work independently through OpenReview or the workshop website if they wish.
+* Should I submit my code and dataset?
+  * Code and datset submission is highly encouraged but not mandatory.
+
 
 ## Questions
 
