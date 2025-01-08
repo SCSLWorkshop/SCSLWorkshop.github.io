@@ -50,11 +50,11 @@ Overall, the topics of interest for the workshop include, but are not limited to
 *   **Acceptance Notification**: Early March 2025 (TBA)
 
 ## Tiny Papers Track
-* This year, ICLR is discontinuing the separate “Tiny Papers” track, and is instead requiring each workshop to accept short paper submissions, with an eye towards inclusion; see ​​https://iclr.cc/Conferences/2025/CallForTinyPapers for more details. Authors of these papers will be earmarked for potential funding from ICLR, but need to submit a separate application for Financial Assistance that evaluates their eligibility. This application for Financial Assistance to attend ICLR 2025 will become available on https://iclr.cc/Conferences/2025/ at the beginning of February and close on March 2nd.
+* **Overview**: This year, ICLR is discontinuing the separate “Tiny Papers” track, and is instead requiring each workshop to accept short paper submissions, with an eye towards inclusion; see [here](https://iclr.cc/Conferences/2025/CallForTinyPapers) for more details. Authors of these papers will be earmarked for potential funding from ICLR, but need to submit a separate application for Financial Assistance that evaluates their eligibility. This application for Financial Assistance to attend ICLR 2025 will become available on [ICLR Webiste](https://iclr.cc/Conferences/2025/) at the beginning of February and close on March 2nd.
 
 * **Goals**: The goal of the Tiny Papers Track is to build on top of previous ICLR Tiny Papers track efforts to encourage submissions from under-represented, under-resourced, and budding researchers who may not (yet) have the resources to submit full papers. SCSL workshop aims to leverage the Tiny Papers track to broaden participation across the diversity of research topics at the intersection of shortcut learning and spurious correlation. We welcome submissions that provide new ideas or fresh perspectives in a digestible format.
 
-* **Instructions**: We encourage submissions up to **3 pages** in length for tiny papers using the ICLR 2025 template (no abstract is required). Reviewers will be asked to evaluate the clarity, correctness and reproducibility of the submission. Submissions from under-represented groups are especially encouraged.
+* **Instructions**: We encourage submissions up to **3 pages** in length for tiny papers using the ICLR 2025 template. Reviewers will be asked to evaluate the clarity, correctness and reproducibility of the submission. Submissions from under-represented groups are especially encouraged.
 
 ## Submission Details
 
