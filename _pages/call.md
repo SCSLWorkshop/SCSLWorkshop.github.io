@@ -46,7 +46,7 @@ Overall, the topics of interest for the workshop include, but are not limited to
 
 ## Important Dates
 
-*   **Submission Deadline**: 10th February 2025, 11:59 PM (AoE)
+*   **Submission Deadline**: 16th February 2025, 11:59 PM (AoE)
 *   **Acceptance Notification**: Early March 2025 (TBA)
 
 ## Tiny Papers Track
