@@ -8,17 +8,13 @@
   --global-text-color: #{$black-color};
   --global-text-color-light: #{$grey-color};
   --global-theme-color: #2B50AA;
-  --global-theme-color-rgb: 43, 80, 170;
   --global-hover-color: #F2545B;
-  --global-hover-color-rgb: 242, 84, 91;
   --global-footer-bg-color: #{$grey-color-dark};
   --global-footer-text-color: #{$grey-color-light};
   --global-footer-link-color: #{$white-color};
   --global-distill-app-color: #{$grey-color};
   --global-divider-color: rgba(0, 0, 0, .1);
   --global-card-bg-color: #{$white-color};
-  --global-card-shadow: rgba(0, 0, 0, 0.1);
-  --global-gradient-overlay: rgba(43, 80, 170, 0.05);
 
   .fa-sun {
     display: none;
@@ -45,17 +41,13 @@ html[data-theme='dark'] {
   --global-text-color: #{$grey-color-light};
   --global-text-color-light: #{$grey-color-light};
   --global-theme-color: #A7BED3;
-  --global-theme-color-rgb: 167, 190, 211;
   --global-hover-color: #F2545B;
-  --global-hover-color-rgb: 242, 84, 91;
   --global-footer-bg-color: #{$grey-color-light};
   --global-footer-text-color: #{$grey-color-dark};
   --global-footer-link-color: #{$black-color};
   --global-distill-app-color: #{$grey-color-light};
   --global-divider-color: #424246;
   --global-card-bg-color: #{$grey-900};
-  --global-card-shadow: rgba(0, 0, 0, 0.2);
-  --global-gradient-overlay: rgba(167, 190, 211, 0.05);
 
   .fa-sun {
     padding-left: 10px;
