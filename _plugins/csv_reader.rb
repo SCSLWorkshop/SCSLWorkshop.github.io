@@ -14,7 +14,8 @@ module Jekyll
           papers << {
             'title' => row['title'],
             'abstract' => row['abstract'],
-            'authors' => '' # Authors field is empty in the CSV
+            'authors' => '', # Authors field is empty in the CSV
+            'link' => row['forum'] # Adding OpenReview link
           }
         end
         site.data['accepted_papers'] = papers

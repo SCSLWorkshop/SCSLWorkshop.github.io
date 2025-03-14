@@ -11,7 +11,13 @@ nav_order: 4
   <div class="paper-list">
     {% for paper in site.data.accepted_papers %}
       <div class="paper-item">
-        <div class="paper-title" data-abstract="{{ paper.abstract }}">{{ paper.title }}</div>
+        <div class="paper-title" data-abstract="{{ paper.abstract }}">
+          {% if paper.link %}
+            <a href="{{ paper.link }}" target="_blank">{{ paper.title }}</a>
+          {% else %}
+            {{ paper.title }}
+          {% endif %}
+        </div>
         <div class="paper-authors">{{ paper.authors }}</div>
         <div class="paper-abstract">{{ paper.abstract }}</div>
       </div>
@@ -75,7 +81,15 @@ nav_order: 4
   .paper-title {
     font-weight: bold;
     cursor: pointer;
+  }
+  
+  .paper-title a {
     color: #0076df;
+    text-decoration: none;
+  }
+  
+  .paper-title a:hover {
+    text-decoration: underline;
   }
   
   .paper-authors {
