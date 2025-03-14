@@ -47,10 +47,28 @@ Overall, the topics of interest for the workshop include, but are not limited to
 ## Important Dates
 
 *   **Submission Deadline**: 16th February 2025, 11:59 PM (AoE)
-*   **Acceptance Notification**: Early March 2025 (TBA)
+*   **Acceptance Notification**: Early March 2025
+*   **Camera-Ready Deadline**: 7th April 2025, 23:59 PM (AoE)
+
+## Camera-Ready Instructions
+
+For authors of accepted papers, please note the following requirements for camera-ready submissions:
+
+* **Deadline**: The camera-ready version must be submitted by April 7, 2025, 23:59 AoE.
+* **Page Limit**: Authors are permitted one additional page beyond their original submission length.
+* **Reviewer Feedback**: We strongly encourage incorporating reviewer and meta-reviewer feedback in the final version.
+* **Formatting Requirements**: The camera-ready version must strictly adhere to the ICLR format template. While some formatting deviations were permitted during initial submission, strict compliance is mandatory for the final version.
+
+### Special Note for ICCV 2025 Dual Submissions
+
+ICCV 2025 considers workshop papers exceeding four pages (excluding references) as prior publications. To accommodate authors with potential ICCV submissions:
+
+* You may opt to submit a four-page version (excluding references) as your camera-ready submission
+* This option allows participation in our workshop while maintaining ICCV submission eligibility
+* If you choose this option, please ensure your final submission stays within the four-page limit
 
 ## Tiny Papers Track
-* **Overview**: This year, ICLR is discontinuing the separate “Tiny Papers” track, and is instead requiring each workshop to accept short paper submissions, with an eye towards inclusion; see [here](https://iclr.cc/Conferences/2025/CallForTinyPapers) for more details. Authors of these papers will be earmarked for potential funding from ICLR, but need to submit a separate application for Financial Assistance that evaluates their eligibility. This application for Financial Assistance to attend ICLR 2025 will become available on [ICLR Website](https://iclr.cc/Conferences/2025/) at the beginning of February and close on March 2nd.
+* **Overview**: This year, ICLR is discontinuing the separate "Tiny Papers" track, and is instead requiring each workshop to accept short paper submissions, with an eye towards inclusion; see [here](https://iclr.cc/Conferences/2025/CallForTinyPapers) for more details. Authors of these papers will be earmarked for potential funding from ICLR, but need to submit a separate application for Financial Assistance that evaluates their eligibility. This application for Financial Assistance to attend ICLR 2025 will become available on [ICLR Website](https://iclr.cc/Conferences/2025/) at the beginning of February and close on March 2nd.
 
 * **Goals**: The goal of the Tiny Papers Track is to build on top of previous ICLR Tiny Papers track efforts to encourage submissions from under-represented, under-resourced, and budding researchers who may not (yet) have the resources to submit full papers. SCSL workshop aims to leverage the Tiny Papers track to broaden participation across the diversity of research topics at the intersection of shortcut learning and spurious correlation. We welcome submissions that provide new ideas or fresh perspectives in a digestible format.
 
