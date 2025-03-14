@@ -1,0 +1,913 @@
+---
+- title: Mitigating Shortcut Learning with Diffusion Counterfactuals and Diverse Ensembles
+  abstract: Spurious correlations in the data, where multiple cues are predictive
+    of the target labels, often lead to a phenomenon known as shortcut learning, where
+    a model relies on erroneous, easy-to-learn cues while ignoring reliable ones.
+    In this work, we propose $DiffDiv$ an ensemble diversification framework exploiting
+    Diffusion Probabilistic Models (DPMs) to mitigate this form of bias. We show that
+    at particular training intervals, DPMs can generate images with novel feature
+    combinations, even when trained on samples displaying correlated input features.
+    We leverage this crucial property to generate synthetic counterfactuals to increase
+    model diversity via ensemble disagreement. We show that DPM-guided diversification
+    is sufficient to remove dependence on shortcut cues, without a need for additional
+    supervised signals. We further empirically quantify its efficacy on several diversification
+    objectives, and finally show improved generalization and diversification on par
+    with prior work that relies on auxiliary data collection.
+  authors: ''
+  link: https://openreview.net/forum?id=RrLq6X8UXW
+- title: 'LAION-C: An Out-of-Distribution Benchmark for Web-Scale Vision Models'
+  abstract: 'Out-of-distribution (OOD) robustness is a desired property of computer
+    vision models. Improving model robustness requires high-quality signals from robustness
+    benchmarks to quantify progress. While various benchmark datasets such as ImageNet-C
+    were proposed in the ImageNet era, most ImageNet-C corruption types are no longer
+    OOD relative to today''s large datasets scraped from the web, which already contain
+    common corruptions such as blur or JPEG compression artifacts. Consequently, these
+    standard benchmarks are no longer well-suited for evaluating OOD robustness in
+    the era of web-scale datasets. Indeed, recent models show saturating scores on
+    ImageNet-era OOD benchmarks, indicating that it is unclear whether models trained
+    on web-scale datasets truly become better at OOD generalization or whether they
+    have simply been exposed to the test distortions during training. To address this,
+    we here introduce LAION-C as a benchmark alternative for ImageNet-C. LAION-C consists
+    of six novel distortion types specifically designed to be OOD, even for web-scale
+    datasets such as LAION. In a comprehensive evaluation of state-of-the-art models,
+    we find that the LAION-C dataset poses significant challenges to contemporary
+    models, including MLLMs such as Gemini and GPT-4o. We additionally conducted a
+    psychophysical experiment to evaluate the difficulty of our proposed corruptions
+    for human observers, enabling a comparison of models to lab-quality human robustness
+    data. We observe a paradigm shift in OOD generalization: from humans outperforming
+    models, to the best models now matching or outperforming the best human observers.'
+  authors: ''
+  link: https://openreview.net/forum?id=t1IBHkU2bt
+- title: 'Spurious Correlations in High Dimensional Regression: The Roles of Regularization,
+    Simplicity Bias and Over-Parameterization'
+  abstract: |-
+    Learning models have been shown to rely on spurious correlations between non-predictive features and the associated labels in the training data, with negative implications on robustness, bias and fairness.
+    In this work, we provide a statistical characterization of this phenomenon for high-dimensional regression, when the data contains a predictive *core* feature $x$ and a *spurious* feature $y$. Specifically, we quantify the amount of spurious correlations $\mathcal C$ learned via linear regression, in terms of the data covariance and the strength $\lambda$ of the ridge regularization. As a consequence, we first capture the simplicity of $y$ through the spectrum of its covariance, and its correlation with $x$ through the Schur complement of the full data covariance. Next, we prove a trade-off between $\mathcal C$ and the in-distribution test loss $\mathcal L$, by showing that the value of $\lambda$ that minimizes $\mathcal L$ lies in an interval where $\mathcal C$ is increasing. Finally, we investigate the effects of over-parameterization via the random features model, by showing its equivalence to regularized linear regression.
+    Our theoretical results are supported by numerical experiments on Gaussian, Color-MNIST, and CIFAR-10 datasets.
+  authors: ''
+  link: https://openreview.net/forum?id=pJvDc6Xucs
+- title: A Unifying Framework for Causal Imitation Learning with Hidden Confounders
+  abstract: 'We propose a general and unifying framework for causal Imitation Learning
+    (IL) with hidden confounders that subsumes several existing settings. Our framework
+    accounts for two types of hidden confounders: (a) those observed by the expert
+    but not the imitator, and (b) confounding noise hidden to both. By leveraging
+    trajectory histories as instruments, we reformulate causal IL into Conditional
+    Moment Restrictions (CMRs). We propose DML-IL, an algorithm that solves these
+    CMRs via instrumental variable regression, and upper bound its imitation gap.
+    Empirical evaluation on continuous state-action environments, including Mujoco
+    tasks, shows that DML-IL outperforms state-of-the-art causal IL methods.'
+  authors: ''
+  link: https://openreview.net/forum?id=arlxXpjWGZ
+- title: 'Debugging Concept Bottlenecks through Intervention: Shortcut Removal + Retraining'
+  abstract: Machine learning models often learn unintended shortcuts (spurious correlations)
+    that do not reflect the true causal structure of a task and thus degrade dramatically
+    under subpopulation shift. This problem becomes especially severe in high-stakes
+    domains where the cost of relying on misaligned shortcuts is prohibitive. To address
+    this challenge, concept bottlenecks explicitly factor predictions into high-level
+    concepts and a simple decision layer, enabling experts to diagnose whether learned
+    concepts align with their domain knowledge. Yet, simply removing undesirable concepts
+    after training is insufficient to prevent shortcuts when the concept encoder is
+    incomplete or entangled. In this work, we propose *CBDebug*, a novel framework
+    to debug concept bottlenecks for robustness under subpopulation shift. First,
+    a domain expert identifies and removes spurious concepts using model explanations
+    (the *Removal* step). Then, leveraging this human feedback, we disentangle or
+    replace the removed shortcuts by retraining on a rebalanced dataset based on the
+    causal graph (the *Retraining* step). Empirically, *CBDebug* significantly outperforms
+    existing concept-based methods. Overall, our work demonstrates how expert-guided
+    debugging of concept bottlenecks can achieve interpretability and robustness,
+    promoting alignment of a model’s internal reasoning with how humans reason.
+  authors: ''
+  link: https://openreview.net/forum?id=KuHArH2mMQ
+- title: Privacy Risks and Memorization of Spurious Correlated Data
+  abstract: "Neural networks are vulnerable to privacy attacks aimed at stealing sensitive
+    data. \nThe risks are amplified in real-world scenario when models are trained
+    on limited and biased data.\nIn this work, we investigate the impact of spurious
+    correlation bias on privacy vulnerability. \nWe introduce _spurious privacy leakage_,
+    a phenomenon where spurious groups are more vulnerable to privacy attacks compared
+    to other groups.\nThrough empirical analysis, we counterintuitively demonstrate
+    that reducing spurious correlation fails to address the privacy disparity between
+    groups.\nThis leads us to introduce a new perspective on privacy disparity based
+    on data memorization. We show that mitigating spurious correlation does not reduce
+    the degree of data memorization, and therefore, neither the privacy risks.\nOur
+    findings highlight the need to rethink privacy with spurious learning."
+  authors: ''
+  link: https://openreview.net/forum?id=BZHrxFDSur
+- title: 'ReSL: Enhancing Deep Clustering Through Reset-based Self-Labeling'
+  abstract: |-
+    The goal of clustering is to group similar data points together. Deep clustering enhances this process by using neural networks for inferring better data representations through a three-stage approach: pre-training for initial feature learning, deep clustering to structure the latent space, and self-labeling to iteratively refine both representations and cluster assignments. Ever since its inception, self-labeling has been a crucial element for reaching state-of-the-art performance in deep clustering. The samples for the self-labeling phase are obtained by setting a confidence threshold for the network’s predictions and only using samples that exceed this threshold for further training. This often improves clustering performance but relies on training with noisy, self-constructed labels (pseudo-labels). As the model iteratively retrains on its own pseudo-labels, the certainty of its predictions tends to rise, increasing its confidence over time. The increasing confidence leads to a growing number of training samples also including more and more samples assigned to the wrong cluster, which can limit performance. Particularly, the model's initially learned biases are amplified by relying on easily learned but ultimately misleading patterns in pseudo-labels, hampering generalization.
+
+    In this paper, we propose ReSL, a framework that unites Resets with Self-Labeling. We demonstrate that employing weight-reset techniques during self-labeling increases clustering performance and improves generalization. Our findings address limitations of self-labeling and provide a foundation for future research in developing more robust approaches.
+  authors: ''
+  link: https://openreview.net/forum?id=PxyFJfsxtR
+- title: Order Independence With Finetuning
+  abstract: 'Large language models (LLMs) demonstrate remarkable performance on many
+    NLP tasks, yet often exhibit order dependence: simply reordering semantically
+    identical tokens (e.g., answer choices in multiple-choice questions) can lead
+    to inconsistent predictions. Recent work proposes Set-Based Prompting (SBP) as
+    a way to remove order information from designated token subsets, thereby mitigating
+    positional biases. However, applying SBP on base models induces an out-of-distribution
+    input format, which can degrade in-distribution performance. We introduce a fine-tuning
+    strategy that integrates SBP into the training process, “pulling” these set-formatted
+    prompts closer to the model’s training manifold. We show that SBP can be incorporated
+    into a model via fine-tuning. Our experiments on in-distribution (MMLU) and out-of-distribution
+    (CSQA, ARC Challenge) multiple-choice tasks show that SBP fine-tuning significantly
+    improves accuracy and robustness to answer-order permutations, all while preserving
+    broader language modeling capabilities. We discuss the broader implications of
+    order-invariant modeling and outline future directions for building fairer, more
+    consistent LLMs.'
+  authors: ''
+  link: https://openreview.net/forum?id=y1h8wOVSsE
+- title: Assessing the Capabilities of Large Brainwave Foundation Models
+  abstract: Over the last decade, deep learning models have been widely used for automatic
+    feature extraction and classification in various Brain-Computer Interface (BCI)
+    tasks. However, their performance and generalization capabilities are often not
+    adequately assessed, as these models are frequently trained and tested under flawed
+    setups and / or influenced by spurious correlations. Recently, these limitations
+    have also been observed in the training and evaluation of Large Brainwave Foundation
+    Models (LBMs). In this work, we employ causal reasoning and careful consideration
+    for task-discriminative artifacts in various EEG datasets covering diverse BCI
+    paradigms and propose a benchmarking protocol to properly evaluate the decoding
+    performance and generalization capabilities of LBMs. Utilising a subject-independent
+    cross-validation approach for each curated benchmark dataset, we showcase that
+    LBMs achieve marginal performance gains over conventional deep learning baselines.
+  authors: ''
+  link: https://openreview.net/forum?id=ADU3uNKLLJ
+- title: 'Causal Lifting of Neural Representations: Zero-Shot Generalization for Causal
+    Inferences'
+  abstract: A plethora of real-world scientific investigations is waiting to scale
+    with the support of trustworthy predictive models that can reduce the need for
+    costly data annotations.  We focus on causal inferences on a target experiment
+    with unlabeled factual outcomes, retrieved by a predictive model fine-tuned on
+    a labeled similar experiment. First, we show that factual outcome estimation via
+    Empirical Risk Minimization (ERM) may fail to yield valid causal inferences on
+    the target population, even in a randomized controlled experiment and infinite
+    training samples. Then, we propose to leverage the observed experimental settings
+    during training to empower generalization to downstream interventional investigations,
+    ``Causal Lifting'' the predictive model. We propose Deconfounded Empirical Risk
+    Minimization (DERM), a new simple learning procedure minimizing the risk over
+    a fictitious target population, preventing potential confounding effects. We validate
+    our method on both synthetic and real-world scientific data. Notably, for the
+    first time, we zero-shot generalize causal inferences on ISTAnt dataset (without
+    annotation) by causal lifting a predictive model on our experiment variant.
+  authors: ''
+  link: https://openreview.net/forum?id=JDSj8Hbkxe
+- title: Measuring the Layer-Wise Impact of Image Shortcuts on Deep Model Features
+  abstract: 'Shortcuts, spurious patterns that perform well only on the training distribution,
+    pose a major challenge to deep network reliability (Geirhos et al., 2020). In
+    this work, we investigate the layer-wise impact of image shortcuts on learned
+    features. First, we propose an experiment design that introduces artificial shortcut-inducing
+    skews during training, enabling a counterfactual analysis of how different layers
+    contribute to shortcut-related accuracy degradation. Next, we use our method to
+    study the effects of a patch-like skew on CNNs trained on CIFAR-10 and CIFAR-100.
+    Our analysis reveals that different types of skews affect networks layers differently:
+    class-universal skews (affecting all instances of a target class) and class-specific
+    skews (affecting only one class) impact deeper layers more than non-universal
+    and non-specific skews, respectively. Additionally, we identify the forgetting
+    of shortcut-free features as a key mechanism behind accuracy drop for our class
+    of skews, indicating the potential role of simplicity bias (Shah et al., 2020)
+    and excessive regularization (Sagawa et al., 2020) in shortcut learning.'
+  authors: ''
+  link: https://openreview.net/forum?id=5sigk5jNqt
+- title: Multi-token prediction boosts creativity in algorithmic tasks
+  abstract: |-
+    In _open-ended_ tasks --- such as designing word problems or discovering novel proofs --- the goal is not only correctness but also diversity and originality. Often, this requires a far-sighted, creative leap of thought. We argue that this requirement is misaligned with the objective of next-token prediction (NTP). To formulate our intuition, we design a suite of minimal algorithmic tasks loosely based on real-world creative endeavors. Concretely, our tasks require an open-ended _stochastic_ planning step that (a) discovers new connections in a knowledge graph (loosely inspired by word-play, humor or drawing analogies) or (b) constructs new patterns (loosely inspired by constructing word problems, puzzles or mysteries).
+     We then conceptually and empirically argue how NTP leads to myopic shortcut-learning and excessive memorization, limiting its ability to generate novel solutions. In contrast, we find that multi-token approaches, namely teacherless training and diffusion models, can overcome these limitations and comparatively excel on our algorithmic test-bed. Orthogonally, we find that creativity in our tasks is greatly improved by training with a random hash prefix (which we dub as ``_{hash-conditioning_'').
+     Thus our work offers a principled, minimal test-bed for studying  open-ended forms of intelligence and also  a new angle to take a more serious interest in the paradigm of multi-token prediction.
+  authors: ''
+  link: https://openreview.net/forum?id=AjKT8U3hi7
+- title: Distinct Computations Emerge From Compositional Curricula in In-Context Learning
+  abstract: In-context learning (ICL) typically presents a function through a uniform
+    sample of input-output pairs. Here, we investigate how presenting a compositional
+    subtask curriculum in context may alter the computations that the model learns.
+    We design a compositional algorithmic task based on the modular exponential---a
+    double exponential task composed of two single exponential subtasks---and train
+    transformer models to learn the task in-context. We compare the model when trained
+    (a) using an in-context curriculum consisting of single exponential subtasks and,
+    (b) the model trained directly on the double exponential task without such a curriculum.
+    We show that the model trained with a subtask curriculum can perform zero-shot
+    inference on unseen compositional tasks and is more robust given the same context
+    length. We study how the task is represented across the two training regimes,
+    in particular whether subtask information is represented. We find that the model
+    employs different mechanisms, possibly changing through training, in a way modulated
+    by the data properties of the in-context curriculum.
+  authors: ''
+  link: https://openreview.net/forum?id=oo5TNikeJl
+- title: 'Trust Me, I Know the Way: Predictive Uncertainty in the Presence of Shortcut
+    Learning'
+  abstract: |-
+    The correct way to quantify predictive uncertainty in neural networks remains a topic of active discussion.
+    In particular, it is unclear whether the state-of-the art entropy decomposition leads to a meaningful representation of model, or *epistemic*, uncertainty (EU) in the light of a debate that pits *ignorance* against *disagreement* perspectives.
+    We aim to reconcile the conflicting viewpoints by arguing that both are valid but arise from different learning situations.
+    Notably, we show that the presence of *shortcuts* is decisive for EU manifesting as disagreement.
+  authors: ''
+  link: https://openreview.net/forum?id=Fpu8tQYfdq
+- title: Shortcut Learning Susceptibility in Vision Classifiers
+  abstract: Shortcut learning, where machine learning models exploit spurious correlations
+    in data instead of capturing meaningful features, poses a significant challenge
+    to building robust and generalizable models. This phenomenon is prevalent across
+    various machine learning applications, including vision, natural language processing,
+    and speech recognition, where models may find unintended cues that minimize training
+    loss but fail to capture the underlying structure of the data. Vision classifiers
+    based on Convolutional Neural Networks (CNNs), Multi-Layer Perceptrons (MLPs),
+    and Vision Transformers (ViTs) leverage distinct architectural principles to process
+    spatial and structural information, making them differently susceptible to shortcut
+    learning. In this study, we systematically evaluate these architectures by introducing
+    deliberate shortcuts into the dataset that are positionally correlated with class
+    labels, creating a controlled setup to assess whether models rely on these artificial
+    cues or learn actual distinguishing features. We perform both quantitative evaluation
+    by training on the shortcut-modified dataset and testing them on two different
+    test sets—one containing the same shortcuts and another without them—to determine
+    the extent of reliance on shortcuts. Additionally, qualitative evaluation is performed
+    by using network inversion-based reconstruction techniques to analyze what the
+    models internalize in their weights, aiming to reconstruct the training data as
+    perceived by the classifiers. Further we also evaluate susceptibility to shortcuts
+    learning across different learning rates. Our analysis reveals that CNNs at lower
+    learning rates comparatively tend to be reserved against entirely picking up the
+    shortcut features while ViTs almost entirely ignore the distinctive image features
+    in presence of shortcuts.
+  authors: ''
+  link: https://openreview.net/forum?id=dvafjL2zXP
+- title: On the Emergence of Position Bias in Transformers
+  abstract: 'Recent studies have revealed various manifestations of position bias
+    in transformer architectures, from the ''lost-in-the-middle'' phenomenon to attention
+    sinks, yet a comprehensive theoretical understanding of how attention masks and
+    positional encodings shape these biases remains elusive. This paper introduces
+    a novel graph-theoretic framework to analyze position bias in multi-layer attention.
+    Modeling attention masks as directed graphs, we quantify how tokens interact with
+    contextual information based on their sequential positions. We uncover two key
+    insights: First, causal masking inherently biases attention toward earlier positions,
+    as tokens in deeper layers attend to increasingly more contextualized representations
+    of earlier tokens. Second, we characterize the competing effects of the causal
+    mask and relative positional encodings, such as the decay mask and rotary positional
+    encoding (RoPE): while both mechanisms introduce distance-based decay within individual
+    attention maps, their aggregate effect across multiple attention layers – coupled
+    with the causal mask – leads to a trade-off between the long-term decay effects
+    and the cumulative importance of early sequence positions. Through controlled
+    numerical experiments, we not only validate our theoretical findings but also
+    reproduce position biases observed in real-world LLMs. Our framework offers a
+    principled foundation for understanding positional biases in transformers, shedding
+    light on the complex interplay of attention mechanism components and guiding more
+    informed architectural design.'
+  authors: ''
+  link: https://openreview.net/forum?id=bZX8VNtvrM
+- title: 'Generalizing to any diverse distribution: uniformity & rebalancing'
+  abstract: As training datasets grow larger, we aspire to develop models that generalize
+    well to any diverse test distribution, even if the latter deviates significantly
+    from the training data. Various approaches like domain adaptation, domain generalization,
+    and robust optimization attempt to address the out-of-distribution challenge by
+    posing assumptions about the relation between training and test distribution.
+    Differently, we adopt a more conservative perspective by accounting for the worst-case
+    error across all sufficiently diverse test distributions within a known domain.
+    Our first finding is that training on a uniform distribution over this domain
+    is optimal. We also interrogate practical remedies when uniform samples are unavailable
+    by considering methods for mitigating non-uniformity through finetuning and rebalancing.
+    Our theory aligns with previous observations on the role of entropy and rebalancing
+    for o.o.d. generalization. We also provide new empirical evidence across tasks
+    involving o.o.d. shifts which show applicability of our perspective.
+  authors: ''
+  link: https://openreview.net/forum?id=R83LOnUmbg
+- title: Fine-Tuning Pretrained Models with NVIB for Improved Generalisation
+  abstract: 'Fine-tuned pretrained attention-based models often struggle with generalisation,
+    leading to poor performance on tasks like out-of-domain transfer, distribution
+    shifts, and few-shot learning. This limitation is prevalent across modalities
+    such as speech, text, graphs, and vision. Nonparametric Variational Information
+    Bottleneck (NVIB) is an attention-based information-theoretic regulariser applicable
+    to pretrained models that has been shown to improve generalisation. However, prior
+    work has applied NVIB only to the text modality and without fine-tuning. We investigate
+    whether NVIB’s ability to remove information from pretrained embeddings helps
+    the model avoid spurious correlations with noisy and superficial features during
+    fine-tuning. We are the first to integrate NVIB regularisation during fine-tuning
+    across multiple diverse models and modalities. This required modifications to
+    the architecture which enhance adaptability and stability during fine-tuning and
+    simplify the evaluation. We found improved out-of-distribution generalisation
+    in: speech quality assessment and language identification, text with induced attention
+    sparsity, graph-based link prediction, and few-shot image classification.'
+  authors: ''
+  link: https://openreview.net/forum?id=eX0VFgG4IS
+- title: Rich feature learning via diversification
+  abstract: Rich Feature Learning (RFL) aims to extract all beneficial features from
+    the training distribution and has demonstrated significant efficacy in Out-of-Distribution
+    (OOD) generalization. Despite its success, a precise and comprehensive definition
+    of ``richness'' remains elusive. Through an in-depth analysis of RFL algorithms
+    and empirical risk minimization (ERM), the standard OOD baseline, we identify
+    feature diversity as the key differentiator driving RFL's superior OOD performance.
+    Building on this insight, we formally define rich features as those that exhibit
+    both high informativeness and diversity. Leveraging this foundation, we propose
+    Diversity-fOunded Rich fEature lEarniNg (DOREEN), a simple yet highly effective
+    RFL algorithm. We theoretically demonstrate that DOREEN not only realizes the
+    benefits of RFL but also addresses the limitations of prior RFL algorithms. Extensive
+    experiments validate that DOREEN learns richer features and consistently enhances
+    OOD performance across various OOD objectives.
+  authors: ''
+  link: https://openreview.net/forum?id=dv23kah60r
+- title: Context Heterogeneity Makes In-Context Knowledge Conflicts Harder to Detect
+  abstract: 'Language models (LMs) deployed in real-world tasks -- such as medical
+    report synthesis, web navigation, and summarization -- must process diverse inputs
+    and handle conflicting information. Users expect them to detect *in-context knowledge
+    conflicts* -- direct contradictions about objective facts -- and issue alerts.
+    Yet, we find a critical failure: when faced with conflicting evidence across **heterogeneous
+    contexts**, such as multiple languages or modalities, LMs fail to detect conflicts,
+    leaving them vulnerable to attacks and misinformation. While they achieve near-perfect
+    accuracy in homogeneous contexts, this **drops by up to 65%** in heterogeneous
+    settings. We identify *context imbalance* as the root cause: LMs exhibit extreme
+    attention asymmetry across domains, disproportionately prioritizing certain domains
+    in mixed inputs. Current instruction-tuning, which trains on separate examples
+    from multiple domains, fails to correct this. To address this, we need *instance-level
+    diverse points* that require reasoning over multiple domains within a single context.
+    We introduce **Heterogeneous Instruction-Tuning (HeteroIT)**, a scalable dataset-mixing
+    procedure that generates instance-level diversity by combining datasets from different
+    domains. Applying HeteroIT to Bactrian-X, a standard multilingual instruction-tuning
+    dataset, improves conflict detection by 37%.'
+  authors: ''
+  link: https://openreview.net/forum?id=L5pATpeecP
+- title: 'Beyond ID Bias: PCA-Guided Dropout for Robust Fine-tuning'
+  abstract: Fine-tuning large-scale pre-trained models often improves in-distribution
+    (ID) performance at the cost of out-of-distribution (OOD) generalization due to
+    overfitting to ID-specific features. To mitigate this, we propose **PCA Dropout**,
+    a novel fine-tuning strategy that suppresses ID-specific feature dependencies
+    by leveraging Principal Component Analysis (PCA). Our method identifies dominant
+    feature components that contribute the most to ID variance and applies structured
+    dropout to reduce their influence, encouraging the model to learn more generalizable
+    representations. We evaluate PCA Dropout on DomainNet and iWildCam using CLIP-based
+    models, demonstrating consistent improvements in OOD robustness over state-of-the-art
+    fine-tuning methods while maintaining strong ID accuracy. Ablation studies further
+    confirm that structured dropout at the feature level outperforms unstructured
+    feature suppression and random dropout strategies.
+  authors: ''
+  link: https://openreview.net/forum?id=UvrSxutZK9
+- title: Spurious Correlations in Diffusion Models and How to Fix Them
+  abstract: Generative models are not immune to spurious correlations. The spuriousness
+    in generative models is defined by their ability to compose attributes faithfully,
+    often referred to as compositionality in generative models. To compose attributes
+    successfully, a model should learn to accurately capture the statistical independence
+    between attributes. This paper shows that standard conditional diffusion models
+    violate this assumption, even when all attribute compositions are observed during
+    training. And, this violation is significantly more severe when only a subset
+    of the compositions is observed. We propose CoInD to address this problem. It
+    explicitly enforces statistical independence between the conditional marginal
+    distributions by minimizing Fisher’s divergence between the joint and marginal
+    distributions. The theoretical advantages of CoInD are reflected in both qualitative
+    and quantitative experiments, demonstrating a significantly more faithful and
+    precise controlled generation of samples for arbitrary compositions of attributes
+  authors: ''
+  link: https://openreview.net/forum?id=lQqYpU70ul
+- title: 'Bias-Resilient Preference Optimization: Addressing Content-Aware, Multi-Source
+    Biases in Preference Learning'
+  abstract: Large Language Models (LLMs) have made significant strides in generating
+    human-like responses, largely due to preference alignment techniques. However,
+    these methods often assume unbiased human feedback, which is rarely the case in
+    real-world scenarios. This paper introduces Bias-Resilient Preference Optimization
+    (BRPO), a novel framework that addresses multiple sources of content-dependent
+    bias in preference learning. BRPO employs a multi-objective optimization approach
+    to separate true preferences from biases, effectively mitigating their impact.
+    We leverage backdoor attack mechanisms to efficiently learn and control for various
+    biases within a single model. Theoretical analysis and extensive experiments on
+    both synthetic and real-world datasets demonstrate that BRPO significantly improves
+    alignment with primary human preferences while controlling for secondary biases
+    such as response length and harmfulness.
+  authors: ''
+  link: https://openreview.net/forum?id=wYyzXrlsz4
+- title: Inducing Group Fairness in Prompt-Based Language Model Decisions
+  abstract: Classifiers are used throughout industry to enforce policies, ranging
+    from the detection of toxic content to age-appropriate content filtering. While
+    these classifiers serve important functions, it is also essential that they are
+    built in ways that minimize unfair biases for users. One such fairness consideration
+    is called group fairness, which desires that different sub-population of users
+    receive equal treatment.  This is a well-studied problem in the context of classical
+    classifiers. However, the emergence of prompt-based language model (LM) decision
+    making has created new opportunities to solve text-based classification tasks,
+    and the fairness properties of these new classifiers are not yet well understood.
+    Further, the remediation toolkit is incomplete for LM-based decision makers and
+    little is understood about how to improve decision maker group fairness while
+    maintaining classifier performance. This work sets out to add more tools to that
+    toolbox. We introduce adaptations of existing effective approaches from the classical
+    classifier fairness to the prompt-based classifier space. We also devise simple
+    methods that take advantage of the new structure of prompt-based decision makers
+    and operate at the prompt level. We compare these approaches empirically on real
+    data. Our results suggest that adaptations of approaches that are effective for
+    classical classifiers remain effective in the LM-based classifier environment.
+    However, there is room for further exploration of prompt-based remediation methods
+    (and other remediation methods that take advantage of LM structure).
+  authors: ''
+  link: https://openreview.net/forum?id=xBaxtjysUl
+- title: Efficient Differentiable Discovery of Causal Order
+  abstract: Spurious correlations arise when AI models capture statistical dependencies
+    that do not reflect the true causal structure of the underlying reality, leading
+    to unreliable predictions and unsafe decision-making, particularly in high-stakes
+    domains. While causal discovery methods exist to infer causal structure from data,
+    many are computationally expensive and non-differentiable, limiting their integration
+    into modern AI systems. In this work, we introduce a differentiable approach to
+    causal ordering that allows causal discovery to be seamlessly incorporated as
+    a module within existing machine learning pipelines. Our method builds upon Intersort
+    (Chevalley et al., 2025), a score-based algorithm for discovering causal order
+    in Directed Acyclic Graphs (DAGs) using interventional data. To enable differentiable
+    optimization, we develop a continuous relaxation of Intersort using differentiable
+    sorting and ranking techniques, allowing causal constraints to be directly integrated
+    into gradient-based learning frameworks. By incorporating causal discovery as
+    a regularizer, our approach encourages models to rely on causal relationships
+    rather than spurious correlations, ultimately improving their robustness and trustworthiness
+    when actions are taken based on the learned model. Empirical results demonstrate
+    that enforcing causal order as an inductive bias enhances model generalization
+    and interpretability, making AI systems more reliable and safer for real-world
+    deployment.
+  authors: ''
+  link: https://openreview.net/forum?id=NQhcOWAHER
+- title: On the Unreasonable Effectiveness of Last-Layer Retraining
+  abstract: 'Last-layer retraining (LLR) methods — wherein the last layer of a neural
+    network is reinitialized and retrained on a held-out set following ERM training
+    — have recently garnered interest as an efficient approach to rectify dependence
+    on spurious correlations and improve performance on minority groups. Surprisingly,
+    LLR has recently been found to improve worst-group accuracy even when the held-out
+    set is an imbalanced subset of the training set. We initially hypothesize that
+    this “unreasonable effectiveness” of LLR is explained by its ability to mitigate
+    neural collapse through the held-out set, resulting in the implicit bias of gradient
+    descent benefiting robustness. Our empirical investigation does not support this
+    hypothesis. Instead, we present strong evidence for an alternative hypothesis:
+    that the success of LLR is primarily due to better group balance in the held-out
+    set. We conclude by showing how the recent algorithms CB-LLR and AFR perform implicit
+    group-balancing to elicit a robustness improvement.'
+  authors: ''
+  link: https://openreview.net/forum?id=B2W51aq37O
+- title: Exploring Ordinal Bias in Action Recognition for Instructional Videos
+  abstract: 'Action recognition models have shown promising results in understanding
+    consecutive human actions in instructional videos. However, they often rely on
+    dominant action patterns in datasets rather than achieving true video comprehension.
+    We define this as ordinal bias, a systematic reliance on dataset-specific action
+    sequences. To mitigate this, we introduce two simple yet effective video manipulation
+    techniques: action masking and sequence shuffling, where the latter action in
+    dominant pairs is masked, or the sequence is randomized. Our findings reveal that
+    existing models still tend to rely on dominant action pairs and struggle to adapt,
+    highlighting their overestimated performance and lack of robustness.'
+  authors: ''
+  link: https://openreview.net/forum?id=JIon6Xuvm1
+- title: 'Knowledge Distillation for Random Data: Soft Labels and Similarity Scores
+    May Contain Memorized Information'
+  abstract: "This work reexamines conventional views of how neural networks store
+    and transfer memorized information by investigating knowledge distillation for
+    random, unstructured data. While knowledge distillation typically focuses on transferring
+    generalizable patterns, we demonstrate that teacher models can encode and transfer
+    purely memorized associations on finite random i.i.d. datasets. Through systematic
+    experiments with fully connected networks, we show that students trained on teacher
+    logits or embedding similarities achieve non-trivial accuracy on memorized data
+    they never directly observed. This phenomenon persists across varying network
+    capacities, dataset compositions, and even with randomized real-world data. \nOur
+    findings encourage moving beyond simple key-value views of memory in neural networks,
+    and highlight the role of spurious yet learnable patterns that transfer across
+    models—we call them neural mnemonics."
+  authors: ''
+  link: https://openreview.net/forum?id=rU8J8bvcCs
+- title: Language-Guided Diffusion for Domain Generalization
+  abstract: Domain generalization (DG) addresses the challenge of training machine
+    learning models that generalize effectively to unseen target domains exhibiting
+    distributional shifts. Traditional data augmentation techniques, while useful,
+    often fail to adequately simulate the novel domain characteristics necessary for
+    robust DG. We introduce a novel data augmentation framework leveraging the synergistic
+    power of Large Language Models (LLMs) and diffusion models to generate diverse
+    and realistic training data for DG. Our method employs LLMs to create creative
+    prompts that encapsulate new domain styles, which are then used by diffusion models
+    to synthesize high-fidelity images representative of these unseen domains. Furthermore,
+    we integrate a CLIP-guided diversity analysis to ensure that the generated data
+    effectively enhances model generalization while maintaining computational efficiency.
+    Experiments on the PACS dataset show that our method significantly outperforms
+    traditional techniques.
+  authors: ''
+  link: https://openreview.net/forum?id=EGeSejwiQM
+- title: In Search of Forgotten Domain Generalization
+  abstract: Out-of-Domain (OOD) generalization is the ability of a model trained on
+    one or more domains to generalize to unseen domains. In the ImageNet era of computer
+    vision, evaluation sets for measuring a model's OOD performance were designed
+    to be strictly OOD with respect to style. However, the emergence of foundation
+    models and expansive web-scale datasets has obfuscated this evaluation process,
+    as datasets cover a broad range of domains and risk test domain contamination.
+    In search of the forgotten domain generalization, we create large-scale datasets
+    subsampled from LAION---LAION-Natural and LAION-Rendition---that are strictly
+    OOD to corresponding ImageNet and DomainNet test sets in terms of style. Training
+    CLIP models on these datasets reveals that a significant portion of their performance
+    is explained by in-domain examples. This indicates that the OOD generalization
+    challenges from the ImageNet era still prevail and that training on web-scale
+    data merely creates the illusion of OOD generalization. Furthermore, through a
+    systematic exploration of combining natural and rendition datasets in varying
+    proportions, we identify optimal mixing ratios for model generalization across
+    these domains. Our datasets and results re-enable meaningful assessment of OOD
+    robustness at scale---a crucial prerequisite for improving model robustness.
+  authors: ''
+  link: https://openreview.net/forum?id=IVNfzlFUJY
+- title: Spurious Equilibrium in Segmentation Models and Recurrent Processing in Human
+    Vision
+  abstract: Iterative decision-making has been widely studied in human cognition and
+    is recognized for its energy efficiency and suitability for biological computations.
+    In contrast, instance segmentation models adopt strategies that diverge from human
+    vision, each presenting unique strengths and limitations. In this paper, we examine
+    the grouping problem in segmentation models and demonstrate that iterative recurrent
+    processing facilitates the identification of diverse solutions and can enhance
+    grouping capabilities. Our experiments further reveal that recurrent processing
+    accelerates convergence and can generate diverse solutions that can help mitigate
+    suboptimal spurious minima. Our work focuses on confounding cases, which have
+    become increasingly relevant as systems are increasingly deployed in safety-critical
+    environments.
+  authors: ''
+  link: https://openreview.net/forum?id=hUJEXy8AYS
+- title: 'VACT: A Video Automatic Causal Testing System and a Benchmark'
+  abstract: |-
+    With the rapid advancement of text-conditioned Video Generation Models (VGMs), the quality of generated videos has significantly improved, bringing these models closer to functioning as 'world simulators' and making real-world-level video generation more accessible and cost-effective. However, the generated videos often contain factual inaccuracies and lack understanding of fundamental physical laws. While some previous studies have highlighted this issue in limited domains through manual analysis, a comprehensive solution has not yet been established, primarily due to the absence of a generalized, automated approach for modeling and assessing the causal reasoning of these models across diverse scenarios.
+    To address this gap, we propose an automated framework for modeling, evaluating, and measuring the causal understanding of VGMs in real-world scenarios. By combining causal analysis techniques with a carefully designed large language model assistant, our system can assess the causal behavior of models in various contexts without human annotation, which offers strong generalization and scalability. Additionally, we introduce multi-level causal evaluation metrics to provide a detailed analysis of the causal performance of VGMs.
+    As a demonstration, we use our framework to benchmark several prevailing VGMs, offering insight into their causal reasoning capabilities. Our work lays the foundation for systematically addressing the causal understanding deficiencies in VGMs and contributes to advancing their reliability and real-world applicability.
+  authors: ''
+  link: https://openreview.net/forum?id=zCQlzB6Aaa
+- title: Excessive Supervision and Shortcuts Prevent  In-domain Learning of Trivial
+    Graph Search
+  abstract: "This work concerns the path-star task, a minimal example of searching
+    over a graph.  The graph, $G$, is star-shaped with $D$ arms radiating from a start
+    node, $s$. A language model (LM) is given $G$, $s$, and a target node, $t$, which
+    ends one of the arms and is tasked with generating the arm containing $t$. The
+    minimal nature of this task means only a single choice needs to be made: which
+    of the $D$ arms contains $t$?  \n\nDecoder-only LMs fail to solve this simple
+    task above $1/D$ chance  due to a learned shortcut that absorbs training supervision.
+    We show how this pathology is caused by excess supervision and present a series
+    of solutions \ndemonstrating that the task is solvable via decoder-only LMs. We
+    find that the task's minimal nature \ncauses its difficulty, as it prevents task
+    decomposition. Our solutions provide insight into the pathology and its implications
+    for LMs trained via next-token prediction."
+  authors: ''
+  link: https://openreview.net/forum?id=UhsjpwkAYe
+- title: Towards Brain Inspired Design for Addressing the Shortcomings of ANNs
+  abstract: As our understanding of the mechanisms of brain function is enhanced,
+    the value of insights gained from neuroscience to the development of AI algorithms
+    deserves further consideration. Here, we draw parallels with an existing tree-based
+    ANN architecture and a recent neuroscience study arguing that the error-based
+    organization of neurons in the cerebellum that share a preference for a personalized
+    view of the entire error space, may account for several desirable features of
+    behavior and learning. We then analyze the learning behavior and characteristics
+    of the model under varying scenarios to gauge the potential benefits of a similar
+    mechanism in ANN. Our empirical results suggest that having separate populations
+    of neurons with personalized error views can enable efficient learning under class
+    imbalance and limited data, and reduce the susceptibility to unintended shortcut
+    strategies, leading to improved generalization. This work highlights the potential
+    of translating the learning machinery of the brain into the design of a new generation
+    of ANNs and provides further credence to the argument that biologically inspired
+    AI may hold the key to overcoming the shortcomings of ANNs.
+  authors: ''
+  link: https://openreview.net/forum?id=BLNOIaVuRa
+- title: 'Spawrious: A Benchmark for Fine Control of Spurious Correlation Biases'
+  abstract: The problem of spurious correlations (SCs) arises when a classifier relies
+    on non-predictive features that happen to be correlated with the labels in the
+    training data. Previous SC benchmark datasets suffer from varying issues, e.g.,
+    over-saturation or only containing one-to-one (O2O) SCs, but no many-to-many (M2M)
+    SCs arising between groups of spurious attributes and classes. In this paper,
+    we present Spawrious-\{O2O, M2M\}-\{Easy, Medium, Hard\}, an image classification
+    benchmark suite containing spurious correlations between classes and backgrounds.
+    We employ a text-to-image model to generate photo-realistic images and an image
+    captioning model to filter out unsuitable ones. The resulting dataset is of high
+    quality and contains approximately 152k images. Our experimental results demonstrate
+    that state-of-the-art group robustness methods struggle with Spawrious.
+  authors: ''
+  link: https://openreview.net/forum?id=0S0oITNTCz
+- title: 'Meta Learning not to Learn: Robustly Informing Meta-Learning under Nuisance-Varying
+    Families'
+  abstract: In settings where both spurious and causal predictors are available, standard
+    neural networks trained under the objective of empirical risk minimization (ERM)
+    with no additional inductive biases tend to have a dependence on a spurious feature.
+    As a result, it is necessary to integrate additional inductive biases in order
+    to guide the network toward generalizable hypotheses. Often these spurious features
+    are shared across related tasks, such as estimating disease prognoses from image
+    scans coming from different hospitals, making the challenge of generalization
+    more difficult. In these settings, it is important that methods are able to integrate
+    the proper inductive biases to generalize across both nuisance-varying families
+    as well as task families. Motivated by this setting, we present RIME (Robustly
+    Informed Meta lEarning), a new method for meta learning under the presence of
+    both positive and negative inductive biases (what to learn and what not to learn).
+    We first develop a theoretical causal framework showing why existing approaches
+    at knowledge integration can lead to worse performance on distributionally robust
+    objectives. We then show that RIME is able to simultaneously integrate both biases,
+    reaching state of the art performance under distributionally robust objectives
+    in informed meta-learning settings under nuisance-varying families.
+  authors: ''
+  link: https://openreview.net/forum?id=kDyUi9HnxU
+- title: 'SpurLens: Spurious Correlations in Multimodal LLMs'
+  abstract: While multimodal large language models (MLLMs) exhibit remarkable capabilities
+    in visual and textual understanding, they remain highly susceptible to spurious
+    correlations. We propose SpurLens, a novel pipeline leveraging LLMs and open-set
+    object detectors to identify spurious cues and measure their effect on MLLMs in
+    an object detection scenario. Furthermore, we tested different prompting strategies
+    to mitigate this issue, but none proved effective. These findings highlight the
+    urgent need for robust solutions to address spurious correlations in MLLMs.
+  authors: ''
+  link: https://openreview.net/forum?id=SFtrsxKH79
+- title: Evaluating Multi-modal Language Models Through Concept Hacking
+  abstract: Evaluating the cognitive abilities of Multi-modal Language Models (MLLMs)
+    is challenging due to their reliance on spurious correlations. To distinguish
+    shortcut-taking from genuine reasoning, we introduce Concept Hacking, a paradigm
+    manipulating concept-relevant information to flip the ground-truth but preserving
+    concept-irrelevant confounds. For instance, in a perceptual constancy test, models
+    must recognize that a uniformly wide bridge does not narrow in the distance; the
+    manipulated condition using concept hacking altered the bridge to actually taper.
+    We assessed 209 models across 45 experiment pairs spanning nine low-level cognitive
+    abilities, encompassing all five core knowledge domains. Comparing performance
+    on manipulated versus standard conditions revealed that models fell into shortcut-reliant
+    or illusory understanding types, with none approaching human-level performance.
+    Models of varying sizes appear in each category, indicating that scaling neither
+    imparts core knowledge nor reduces shortcut reliance. These findings highlight
+    fundamental limitations in current MLLMs, reinforcing concerns about their ability
+    to achieve genuine understanding.
+  authors: ''
+  link: https://openreview.net/forum?id=B2QXXIZXM3
+- title: BAYESIAN INVARIANCE ENVIRONMENT DATA
+  abstract: Identifying invariant features – those that stably predict the outcome
+    across diverse environments – is crucial for improving model generalization and
+    uncovering causal mechanisms. While previous methods primarily address this problem
+    through hypothesis testing or regularized optimization, they often lack a principled
+    characterization of the underlying data generative process and struggle with high-dimensional
+    data. In this work, we develop a Bayesian model that encodes an invariance assumption
+    in the generative process of multi-environment data. Within this framework, we
+    perform posterior inference to estimate the invariant features and establish theoretical
+    guarantees on posterior consistency and contraction rates. To address the challenges
+    in high-dimensional settings, we design a scalable variational inference algorithm.
+    We demonstrate the superior inference accuracy and scalability of our method compared
+    to existing approaches in simulations and a gene-perturbation study.
+  authors: ''
+  link: https://openreview.net/forum?id=kR8sUs7iHS
+- title: Mitigating Spurious Correlations in Image Recognition Models using Performance-Based
+    Feature Sampling
+  abstract: Existing methods for detecting and correcting spurious correlations in
+    image recognition models often fail to identify biasing features due to incoherent
+    groupings of biased images. There is also little exploration of targeted removal
+    of spurious correlations in a low-dimensional feature space. To address these
+    gaps, we propose Performance-Based Feature Sampling (PBFS), a systematic method
+    for producing image recognition models that are de-biased w.r.t a given feature
+    space. We introduce a method for producing coherent bias group proposals (i.e.,
+    semantically related images potentially sharing biasing feature(s)) and decorrelating
+    biasing features from the target label using adaptive resampling. We demonstrate
+    that our framework is able to correct for known spurious correlations, and through
+    both established and our proposed metrics, we show that our method is able to
+    de-bias image recognition models both w.r.t a high-dimensional feature space capturing
+    complex representations and w.r.t low-dimensional feature spaces representing
+    simple physical properties.
+  authors: ''
+  link: https://openreview.net/forum?id=DRv8wcssgs
+- title: Exploiting What Trained Models Learn for Making Them Robust to Spurious Correlations
+    without Group Annotations
+  abstract: Classifiers trained with Empirical Risk Minimization (ERM) often rely
+    on spurious correlations, degrading performance on underrepresented groups and
+    challenging out-of-distribution generalization and fairness. While prior methods
+    aim to address this, many require group annotations for training or validation,
+    limiting their applicability when spurious correlations or group labels are unknown.
+    We demonstrate that what has been learned during ERM training can be utilized
+    to \textit{fully} remove group supervision for both training and model selection.
+    To show this, we design Environment-based Validation and Loss-based Sampling (EVaLS),
+    which uses losses from an ERM-trained model to construct datasets with mitigated
+    group imbalance. EVaLS leverages environment inference to create diverse environments
+    with correlation shifts, enabling model selection without group-annotated validation
+    data. By using worst environment accuracy as a tuning surrogate, EVaLS achieves
+    robust performance across groups through simple last-layer retraining. This fast
+    and effective approach eliminates the need for group annotations, achieving competitive
+    worst-group accuracy and improving robustness to known and unknown spurious correlations.
+  authors: ''
+  link: https://openreview.net/forum?id=8vo1YSAt6g
+- title: Towards personalized healthcare without harm via bias modulation
+  abstract: 'Personalized machine learning models have gained significant importance
+    in various domains, including healthcare. However, designing efficient personalized
+    models remains a challenge. Traditional approaches often involve training multiple
+    sub-models for different population sub-groups, which can be costly and does not
+    always guarantee improved performance across all sub-groups. This paper presents
+    a novel approach to improving model performance at the sub-group level by leveraging
+    bias and training a joint model. Our method involves a two-step process: first,
+    we train a model to predict group attributes, and then we use this model to learn
+    data-dependent biases to modulate a second model for diagnosis prediction. Our
+    results demonstrate that this joint architecture achieves consistent performance
+    gains across all sub-groups in the Heart dataset. Furthermore, in the mortality
+    dataset, it improves performance in two of the four sub-groups. A comparison of
+    our method with the traditional decoupled personalization method demonstrated
+    a greater performance gain in the sub-groups with less harm. This approach offers
+    a more effective and scalable solution for personalization of models, which could
+    have positive impact in healthcare and other areas that require predictive models
+    which take sub-group information into account.'
+  authors: ''
+  link: https://openreview.net/forum?id=DBQ0b5JTxk
+- title: A Guide to Misinformation Detection Datasets
+  abstract: Misinformation is a complex societal issue, and mitigating solutions are
+    difficult to create due to data deficiencies. To address this problem, we have
+    curated the largest collection of (mis)information datasets in the literature,
+    totaling 75. From these, we evaluated the quality of all of the 36 datasets that
+    consist of statements or claims, as well as the 9 datasets that consists of data
+    in purely paragraph form. We assess these datasets to identify those with solid
+    foundations for empirical work and those with flaws that could result in misleading
+    and non-generalizable results, such as insufficient label quality, spurious correlations.
+    We further provide state-of-the-art baselines on all these datasets, but show
+    that regardless of label quality, categorical labels may no longer give an accurate
+    evaluation of detection model performance. We discuss alternatives to mitigate
+    this problem. Overall, this guide aims to provide a roadmap for obtaining higher
+    quality data and conducting more effective evaluations, ultimately improving research
+    in misinformation detection. All datasets and other artifacts are available at
+    [anonymized].
+  authors: ''
+  link: https://openreview.net/forum?id=A4hZihc6QE
+- title: Can Transformers Learn Tasks of Varying Complexity In-context?
+  abstract: In-context learning (ICL) is the remarkable ability of trained transformers
+    to adapt to new tasks by leveraging a sequence of examples provided at inference
+    time—without any additional training. Prior work on understanding ICL has primarily
+    focused on setups with fixed task complexity (e.g., linear, logistic, or sinusoidal
+    regression tasks with fixed complexity, and more recently first-order Markov chains),
+    overlooking the diverse range of tasks that large language models encounter in
+    practice. In this paper, we investigate ICL in transformers trained on multiple
+    task categories of varying complexity. Our results show that, during inference,
+    transformers effectively learn in-context by identifying the appropriate task
+    complexity and accurately estimating the corresponding task parameters. We verify
+    our claim with experiments on Markov chains and linear regression tasks of varying
+    complexity. Additionally, our experiments suggest that transformers exhibit a
+    bias towards learning the simplest task that explains the inference-time context.
+  authors: ''
+  link: https://openreview.net/forum?id=YPeBuAwBNO
+- title: ASSESSING ROBUSTNESS TO SPURIOUS CORRELATIONS IN POST-TRAINING LANGUAGE MODELS
+  abstract: |-
+    Supervised and preference-based fine-tuning techniques have become popular for
+    aligning large language models (LLMs) with user intent and correctness criteria.
+    However, real-world training data often exhibits spurious correlations—arising
+    from biases, dataset artifacts, or other “shortcut” features—that can compromise a
+    model’s performance or generalization. In this paper, we systematically evaluate
+    three post-training algorithms—Supervised Fine-Tuning (SFT), Direct Preference
+    Optimization (DPO), and KTO (Kahneman-Tversky Optimization)—across a di-
+    verse set of synthetic tasks and spuriousness conditions. Our tasks span mathemat-
+    ical reasoning, constrained instruction-following, and document-grounded ques-
+    tion answering. We vary the degree of spurious correlation (10% vs. 90%) and
+    investigate two forms of artifacts: “Feature Ambiguity” and “Distributional Nar-
+    rowness.” Our results show that the models often but not always degrade under
+    higher spuriousness. The preference-based methods (DPO/KTO) can demonstrate
+    relative robustness in mathematical reasoning tasks. By contrast, SFT maintains
+    stronger performance in complex, context-intensive tasks. These findings high-
+    light that no single post-training strategy universally outperforms in all scenarios;
+    the best choice depends on the type of target task and the nature of spurious cor-
+    relations.
+  authors: ''
+  link: https://openreview.net/forum?id=5FUmGAZZ5w
+- title: Structured Robustness for Distribution Shifts
+  abstract: |-
+    Out-of-distribution (OOD) data often undermines reliable model deployment in
+    high-stakes domains such as financial markets, where overlooked correlations
+    and unexpected shifts can render predictive systems ineffective. We propose
+    STAR (Structured Transformations and Adversarial Reweighting), a framework
+    that leverages the geometry of distribution shifts by combining transformation-
+    based invariances with divergence-based robust optimization. Specifically, STAR
+    places an f -divergence ball around each label-preserving transformation of the
+    training sample, empowering an adversary to apply known transformations and
+    reweight the resulting data within a specified divergence radius. This design cap-
+    tures both large, structured shifts and subtle, unmodeled perturbations—a critical
+    step toward mitigating shortcuts and spurious correlations. Notably, STAR recov-
+    ers standard distributionally robust optimization if no structured transformations
+    are assumed. We establish a uniform-convergence analysis showing that minimiz-
+    ing STAR’s empirical nested min–max objective achieves low worst-case error
+    over all admissible shifts with high probability. Our results quantify the additional
+    samples needed to handle the adversary’s flexibility, providing theoretical guid-
+    ance for selecting the divergence radius based on problem complexity. Empirical
+    studies on synthetic and image benchmarks confirm that STAR outperforms base-
+    lines, consistent with our theoretical findings.
+  authors: ''
+  link: https://openreview.net/forum?id=4tBjnFqmaQ
+- title: 'GradTune: Last-layer Fine-tuning for Group Robustness Without Group Annotation'
+  abstract: This work addresses the limitations of deep neural networks (DNNs) in
+    generalizing beyond training data due to spurious correlations. Recent research
+    has demonstrated that models trained with empirical risk minimization learn both
+    core and spurious features, often upweighting spurious ones in the final classification,
+    which can frequently lead to poor performance on minority groups. Deep Feature
+    Reweighting alleviates this issue by retraining the model's last classification
+    layer using a group-balanced held-out validation set. However, relying on spurious
+    feature labels during training or validation limits practical application, as
+    spurious features are not always known or costly to annotate. Our preliminary
+    experiments reveal that ERM-trained models exhibit higher gradient norms on minority
+    group samples in the hold-out dataset. Leveraging these insights, we propose an
+    alternative approach called GradTune, which fine-tunes the last classification
+    layer using high-gradient norm samples. Our results on four well-established benchmarks
+    demonstrate that the proposed method can achieve competitive performance compared
+    to existing methods without requiring group labels during training or validation.
+  authors: ''
+  link: https://openreview.net/forum?id=WL9Sxi3iat
+- title: Diagnosing the Effects of Pre-training Data on Fine-tuning and Subgroup Robustness
+    for Occupational NER in Clinical Notes
+  abstract: This work evaluates Named Entity Recognition (NER) across five large language
+    models (LLMs) using real-world narratives from healthcare and general-purpose
+    datasets, focusing on occupational biases and cross-domain robustness. While prior
+    studies have primarily examined biases in name-based entities using short sentence
+    templates, we shift the focus to evaluating occupational NER in long note templates,
+    analyzing biases across gender, race, and annual wage dimensions. Additionally,
+    we assess cross-domain performance to understand how well the models generalize
+    to unseen domain-specific data, such as healthcare datasets. Our evaluation demonstrates
+    the effectiveness of fine-tuning on domain-specific datasets in improving performance
+    compared to zero-shot and universal NER models. However, significant disparities
+    in model performance and bias representation are observed, highlighting the need
+    for targeted mitigation strategies to ensure subgroup robustness in real-world
+    NER applications.
+  authors: ''
+  link: https://openreview.net/forum?id=xfCjvr8MWR
+- title: Rethinking Object-Centric Representations in the Era of Foundational Segmentation
+    Models
+  abstract: 'Object-centric learning (OCL) aims to represent each object''s information
+    independently and minimize interference from backgrounds and other objects. OCL
+    is expected to aid model generalization, especially in out-of-distribution (OOD)
+    settings. However, the community''s effort has been focused on improving unsupervised
+    entity segmentation performances which is secondary to the main objective. We
+    challenge this. We argue that segmentation is no longer the main barrier: recent
+    class-agnostic segmentation methods reliably localize objects in a zero-shot manner.
+    Instead, we advocate for a renewed emphasis on how decomposed representations
+    can improve OOD generalization. As a first step, we propose Object-Centric Classification
+    with Applied Masks (OCCAM) that exploits discovered objects to extract their representations
+    for downstream classification tasks. Our experiments on datasets with background
+    spurious correlations suggest that even in this task OCL representations do not
+    lead to better generalization than object-centric representations provided by
+    foundational segmentation models. These results showcase the importance of recognizing
+    advances in zero-shot image segmentation when high-performant object-centric representations
+    are the end goal. In addition to that, we suggest exploring new benchmarks for
+    OCL methods evaluation that better reflect the problems these methods are designed
+    to solve and highlight scenarios where OCL methods are more favorable solutions
+    than foundational segmentation models.'
+  authors: ''
+  link: https://openreview.net/forum?id=gGhRHtVZDo
+- title: Cross-Instance Contrastive Masking in Vision Transformers for Self-Supervised
+    Hyperspectral Image Classification
+  abstract: This article presents a novel Cross-Instance Contrastive Masking-Enhanced
+    Vision Transformer (CICM-ViT) for hyperspectral image (HSI) classification, which
+    attempts to reduce shortcut learning through Cross-Instance Contrastive Masking
+    (CICM) to enhance spectral-spatial feature extraction through self-supervision.
+    Using the dependencies between instances, CICM-ViT dynamically masks spectral
+    patches across instances, promoting the learning of discriminative features while
+    reducing redundancy, especially in low-data settings. This approach reduces shortcut
+    learning by focusing on global patterns rather than relying on local spurious
+    correlations. CICM-ViT achieves state-of-the-art performance on HSI datasets,
+    with 99.91% OA on Salinas, 96.88% OA on Indian Pines, and 98.88% OA on Botswana,
+    outperforming fourteen SOTA CNN- and transformer-based approaches in both accuracy
+    and efficiency, with only 89,680 parameters.
+  authors: ''
+  link: https://openreview.net/forum?id=AAi4rWZagB
+- title: 'LACER: Loss-Aware Clustering for Effective Reweighting'
+  abstract: 'Deep neural networks trained with Empirical Risk Minimization (ERM) are
+    prone to rely on simple spurious features—features that are correlated with the
+    target but are not causally related to it. To mitigate this over-reliance, Deep
+    Feature Reweighting (DFR) has emerged as an efficient approach, which works by
+    retraining the last layer of an ERM model on a small reweighting dataset. While
+    effective, DFR requires group annotations to create the reweighting dataset, which
+    may be challenging and costly to obtain. Though subsequent works have proposed
+    ways to alleviate this constraint, existing methods still largely rely on group
+    annotations for hyperparameter tuning to achieve robust performance. In this paper,
+    we present LACER, a method that improves group robustness without requiring explicit
+    group annotations for either training or model selection. LACER operates in two
+    stages: first estimating group labels through a loss-weighted clustering formulation
+    that effectively identifies clusters corresponding to underrepresented groups
+    in the validation set, then leveraging these estimated labels for last-layer retraining.
+    Our results provide the empirical evidence that combining semantic feature information
+    with loss values enables effective group label estimation. We validate LACER across
+    multiple vision spurious correlations benchmarks, demonstrating performance comparable
+    to oracle last-layer retraining methods that utilize ground-truth group annotations.'
+  authors: ''
+  link: https://openreview.net/forum?id=ah74szSNvA
+- title: 'BEYOND DECODABILITY: LINEAR FEATURE SPACES ENABLE VISUAL COMPOSITIONAL GENERALIZATION'
+  abstract: While compositional generalization is fundamental to human intelligence,
+    we still lack understanding of how neural networks combine learned representations
+    of parts into novel wholes. We investigate whether neural networks express representations
+    as linear sums of simpler constituent parts.  Our analysis reveals that models
+    trained from scratch often exhibit decodability, where the features can be linearly
+    decoded to perform well, but may lack linear structure, preventing the models
+    from generalizing zero-shot. Instead, linearity of representations only arises
+    with high training data diversity. We prove that when representations are linear,
+    perfect generalization to novel concept combinations is possible with minimal
+    training data. Empirically evaluating large-scale pretrained models through this
+    lens reveals that they achieve strong generalization for certain concept types
+    while still falling short of the ideal linear structure for others.
+  authors: ''
+  link: https://openreview.net/forum?id=IaTj8xNn7F
+- title: Object-Centric Representations Generalize Better Compositionally with Less
+    Compute
+  abstract: |-
+    Compositional generalization—the ability to reason about novel combinations of familiar concepts—is fundamental to human cognition and a critical challenge for machine learning. Object-Centric representation learning has been proposed as a promising approach for achieving this capability. However, systematic evaluation of these methods in visually complex settings remains limited. In this work, we introduce a benchmark to measure how well vision encoders, with and without object-centric biases, generalize to unseen combinations of object properties. Using CLEVRTex-style images, we create multiple training splits with partial coverage of object property combinations and generate question--answer pairs to assess compositional generalization on a held-out test set.
+    We focus on comparing pretrained foundation models with object-centric models that incorporate such foundation models as backbones---a leading approach in this domain. To ensure a fair and comprehensive comparison, we carefully account for representation format differences. In this preliminary study, we use DINOv2 as the foundation model and DINOSAURv2 as its object-centric counterpart. We control for compute budget and differences in image representation sizes to ensure robustness.
+    Our key findings reveal that object-centric approaches (1) converge faster on in-distribution data but underperform slightly when non-object-centric models are given a significant compute advantage, and (2) they exhibit superior compositional generalization, outperforming DINOv2 on unseen combinations of object properties while requiring approximately four to eight times less downstream compute.
+  authors: ''
+  link: https://openreview.net/forum?id=u5Qo7JgqNq
+- title: 'Mitigating Simplicity Bias in Neural Networks: A Feature Sieve Modification,
+    Regularization, and Self-Supervised Augmentation Approach'
+  abstract: Neural networks (NNs) are known to exhibit simplicity bias, where they
+    tend to prioritize learning simple features over more complex ones, even when
+    the latter are more informative. This bias can result in models making skewed
+    predictions with poor out-of-distribution (OOD) generalization. To address this
+    issue, we propose three techniques to mitigate simplicity bias. One of these is
+    a modification to the Feature Sieve method. In the second method we utilize neuronal
+    correlations as a penalizing effect to try and enforce the learning of different
+    features. The third technique involves a novel feature-building approach called
+    Self-Supervised Augmentation. We validate our methods' generalization capabilities
+    through experiments on a custom dataset.
+  authors: ''
+  link: https://openreview.net/forum?id=PBLv8kiF4j
+- title: Unveiling and Mitigating Short-Cut Learning in Multimodal In-Context Learning
+  abstract: The performance of Large Vision-Language Models (LVLMs) in In-Context
+    Learning (ICL) is heavily influenced by the quality of ICL sequences, particularly
+    in tasks requiring cross-modal reasoning and open-ended generation. To address
+    this challenge, we innovatively interpret multimodal ICL from the perspective
+    of task mapping. We systematically model local and global relationships within
+    in-context demonstrations (ICDs) and demonstrate their core role and cohesion
+    in enhancing LVLM performance. Inspired by these findings, we propose Ta-ICL,
+    a lightweight transformer-based model equipped with task-aware attention to dynamically
+    configure ICL sequences. By integrating task mapping into the autoregressive process,
+    Ta-ICL achieves bidirectional enhancement between sequence configuration and task
+    reasoning. Through extensive experiments, we demonstrate that Ta-ICL effectively
+    improves multimodal ICL across various LVLMs and tasks. Our results highlight
+    the potential of task mapping to be widely applied in enhancing multimodal reasoning,
+    paving the way for robust and generalizable multimodal ICL frameworks.
+  authors: ''
+  link: https://openreview.net/forum?id=RVVARgLdTT
