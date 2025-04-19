@@ -6,28 +6,27 @@ description:
 nav: true
 nav_order: 2
 ---
+## Event Schedule
+
 **April 28th, 2025**
+Please submit questions for our panelists <a href="https://docs.google.com/forms/d/e/
+1FAIpQLSenmiDfMDOTwh5YZTLcAl8_i9JHtgquENu96XVL5WsCpt7NPQ/viewform?usp=header">here</a>.
 
-Please submit questions for our panelists <a href="https://docs.google.com/forms/d/e/1FAIpQLSenmiDfMDOTwh5YZTLcAl8_i9JHtgquENu96XVL5WsCpt7NPQ/viewform?usp=header">here</a>.
-
-
-| Start Time | Plan | Details |
-| :---- | :---- | :---- |
-| 9:00 | Openning |  |
-| 9:10 | Invited Talk 1 | 35 \+ 15 minutes for Q\&A and discussion |
-| 10:00 | Invited Talk 2 | 35 \+ 15 minutes for Q\&A and discussion |
-| 10:50 | Break, Informal Discussion, and Networking | 20 minutes break |
-| 11:10 | Invited Talk  3 | 35 \+ 15 minutes for Q\&A and discussion |
-| 12:00 | Poster Session 1 |  |
-| 12:30 | Launch Break |  |
-| 13:30 | Invited Talk 4 | 35 \+ 15 minutes for Q\&A and discussion |
-| 14:20 | Invited Talk 5 | 35 \+ 15 minutes for Q\&A and discussion |
-| 15:10 | Break, Informal Discussion and Networking |  |
-| 15:30 | Oral Presentation 1 | 10 \+ 10 minutes for Q\&A and discussion |
-| 15:50 | Oral Presentation 2 | 10 \+ 10 minutes for Q\&A and discussion |
-| 16:10 | Oral Presentation 3 | 10 \+ 10 minutes for Q\&A and discussion |
-| 16:30 | Panel Discussion |  |
-| 17:30 | Poster Session 2 |  |
+| Time    | Event |
+| :------ | :--------------------------------------------------------------- |
+| 8:30 AM | Opening |
+| 8:35 AM | *Invited Speaker (Online)*: Baharan Mirzasoleiman |
+| 9:20 AM | *Invited Speaker*: Pavel Izmailov |
+| 10:00 AM | Break / Poster Session / Informal Networking |
+| 10:30 AM | *Invited Speaker*: Chelsea Finn |
+| 11:15 AM | *Invited Speaker*: Stefano Sarao Mannelli |
+| 12:00 PM | Break / Poster Session / Informal Networking |
+| 1:30 PM | *Invited Speaker*: Aditi Raghunathan |
+| 2:15 PM | *Invited Speaker*: Andrew Lampinen |
+| 3:00 PM | Break / Poster Session / Informal Networking |
+| 3:30 PM | *Invited Speaker*: David Lopez-Paz |
+| 4:15 PM | Oral Presentations — *Announcing Best Papers* |
+| 5:10 PM | Panel |
 {: .table}
 {: .table-striped}
 
