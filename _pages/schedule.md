@@ -9,8 +9,8 @@ nav_order: 2
 ## Event Schedule
 
 **April 28th, 2025**
-Please submit questions for our panelists <a href="https://docs.google.com/forms/d/e/
-1FAIpQLSenmiDfMDOTwh5YZTLcAl8_i9JHtgquENu96XVL5WsCpt7NPQ/viewform?usp=header">here</a>.
+
+Please submit questions for our panelists <a href="https://docs.google.com/forms/d/e/1FAIpQLSenmiDfMDOTwh5YZTLcAl8_i9JHtgquENu96XVL5WsCpt7NPQ/viewform?usp=header">here</a>.
 
 | Time    | Event |
 | :------ | :--------------------------------------------------------------- |
